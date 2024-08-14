@@ -29,14 +29,14 @@ copyright = "&copy;2024 Crawlspace NH"
   favicon = "favicon.ico"
 
   # Section - Visual
-  # [params.visual]
-  #
-  #   # Image
-  #   [params.visual.image]
-  #     enable = true
-  #     file = "images/background.jpg"
-  #     position = "center center"
-  #
+  [params.visual]
+
+    # Image
+    [params.visual.image]
+      enable = true
+      file = "images/background.jpg"
+      position = "center center"
+
   #   # Video
   #   [params.visual.video]
   #     enable = false
@@ -49,21 +49,22 @@ copyright = "&copy;2024 Crawlspace NH"
   # Links List #1
   [[params.links]]
     [params.links.list1]
-      heading = "Connect"
+      heading = "About"
 
       [[params.links.list1.link]]
-        text = "Blog"
-        url = "#"
-        new_tab = true # new tab
+        text = "The Band"
+        url = "the-band.html"
+        new_tab = false
 
       [[params.links.list1.link]]
-        text = "Email"
-        url = "#"
-        new_tab = false # Default, open at same tab
+        text = "Live"
+        url = "live.html"
+        new_tab = false
 
       [[params.links.list1.link]]
-        text = "Newsletter"
-        url = "#"
+        text = "Archives"
+        url = "archives.html"
+        new_tab = false
 
   # Links List #2
   [[params.links]]
@@ -71,33 +72,34 @@ copyright = "&copy;2024 Crawlspace NH"
       heading = "Social"
 
       [[params.links.list2.link]]
-        text = "Twitter"
-        url = "#"
-
-      [[params.links.list2.link]]
-        text = "Instagram"
-        url = "#"
+        text = "Email"
+        url = "mailto:management@crawlspacenh.com"
 
       [[params.links.list2.link]]
         text = "Facebook"
-        url = "#"
+        url = "https://www.facebook.com/p/Crawlspace-NH-100064934713606/"
+        new_tab = true
+
+      # [[params.links.list2.link]]
+      #   text = "Instagram"
+      #   url = "#"
 
   # Links List #3
-  [[params.links]]
-    [params.links.list3]
-      heading = "Network"
-
-      [[params.links.list3.link]]
-        text = "Link One"
-        url = "#"
-
-      [[params.links.list3.link]]
-        text = "Link Two"
-        url = "#"
-
-      [[params.links.list3.link]]
-        text = "Link Three"
-        url = "#"
+  # [[params.links]]
+  #   [params.links.list3]
+  #     heading = "Network"
+  #
+  #     [[params.links.list3.link]]
+  #       text = "Link One"
+  #       url = "#"
+  #
+  #     [[params.links.list3.link]]
+  #       text = "Link Two"
+  #       url = "#"
+  #
+  #     [[params.links.list3.link]]
+  #       text = "Link Three"
+  #       url = "#"
 
   # The original template is released under the Creative Commons Attribution 3.0 License.
   # Please keep the original attribution link when using for your own project.
