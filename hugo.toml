@@ -1,4 +1,4 @@
-baseURL = 'https://crawlspacenh.github.io/'
+baseURL = 'https://crawlspacenh.com/'
 languageCode = 'en-us'
 title = 'Crawlspace - The Band'
 theme = "hugo-split-theme"
