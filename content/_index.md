@@ -6,8 +6,12 @@ visual.image.enable = true
 draft = false
 +++
 
-Donec at libero id lectus porta dapibus eu in nibh. Cras id mauris sapien.
-Fusce viverra [luctus urna]({{< ref "about.md" >}}) ac rutrum. Duis semper
-elit eu mi facilisis eleifend. Donec semper, [ipsum in]({{< ref "commonmark.md"
->}}) malesuada congue, purus sem ullamcorper massa, sit amet lacinia nibh enim
-sed massa.
+Crawlspace is a high-energy, improvisational band that brings a unique blend of
+rock, funk, and blues to every performance. Known for their tight musicianship
+and spontaneous, groove-filled jams, Crawlspace has earned a reputation as one
+of New Hampshire's most exciting live acts.
+
+With a loyal local following and a passion for creating memorable, immersive
+musical experiences, this dynamic group continues to captivate audiences across
+the region. Whether you're a longtime fan or a newcomer, Crawlspace guarantees
+a night of music that’s both electric and unforgettable.
