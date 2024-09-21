@@ -1,6 +1,6 @@
 baseURL = 'https://crawlspacenh.com/'
 languageCode = 'en-us'
-title = 'Crawlspace - The Band'
+title = 'Crawlspace'
 theme = "hugo-split-theme"
 # disableKinds = ["section", "taxonomy", "RSS", "sitemap"]
 # disableHugoGeneratorInject = true
@@ -15,13 +15,13 @@ copyright = "&copy;2024 Crawlspace NH"
 [services]
   [services.googleAnalytics]
     # Enter your tracking code to enable Google Analytics
-    ID = ""
+    ID = "G-42STEVR9W0"
 
 [params]
 
   # Metadata for search engines and social sharing
   author = "Crawlspace NH"
-  description = "Crawlspace is one of New Hampshire's premier jam bands."
+  description = "Crawlspace is a high-energy, improvisational band that brings a unique blend of rock, funk, and blues to every performance."
   shareImage = "images/social.jpg"
   twitterHandle = "crawlspacenh"
 
