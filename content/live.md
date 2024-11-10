@@ -18,4 +18,4 @@ Concord, NH 03301 ([map](https://maps.app.goo.gl/xidvocii6ZSaLoY59))
 
 [Biederman's Deli](https://www.biedermans.com/)<br>\
 1 Chase Street<br>\
-Plymouth, NH 03301 ([map](https://maps.app.goo.gl/xidvocii6ZSaLoY59))
+Plymouth, NH 03301 ([map](https://maps.app.goo.gl/Jt4WxFVbJfPR34Dr6))
