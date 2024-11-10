@@ -69,8 +69,13 @@ url = "live.html"
 new_tab = false
 
 [[params.links.list1.link]]
-text = "Archives"
-url = "archives.html"
+text = "Videos"
+url = "videos.html"
+new_tab = false
+
+[[params.links.list1.link]]
+text = "Posters"
+url = "posters.html"
 new_tab = false
 
 # Links List #2
@@ -81,6 +86,11 @@ heading = "Social"
 [[params.links.list2.link]]
 text = "Email"
 url = "mailto:management@crawlspacenh.com"
+
+[[params.links.list2.link]]
+text = "Soundcloud"
+url = "https://soundcloud.com/crawlspace-nh"
+new_tab = true
 
 [[params.links.list2.link]]
 text = "Facebook"
