@@ -12,6 +12,9 @@ uglyURLs = true
 # Copyright
 copyright = "&copy;2024 Crawlspace NH"
 
+# Site Config
+ignoreLogs = ['warning-goldmark-raw-html']
+
 [services]
   [services.googleAnalytics]
     # Enter your tracking code to enable Google Analytics
