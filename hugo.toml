@@ -15,106 +15,110 @@ copyright = "&copy;2024 Crawlspace NH"
 # Site Config
 ignoreLogs = ['warning-goldmark-raw-html']
 
+# Goldmark Render Engine Settings
+[markup.goldmark.renderer]
+unsafe = true # Allows embedding HTML in Markdown
+
 [services]
-  [services.googleAnalytics]
-    # Enter your tracking code to enable Google Analytics
-    ID = "G-42STEVR9W0"
+[services.googleAnalytics]
+# Enter your tracking code to enable Google Analytics
+ID = "G-42STEVR9W0"
 
 [params]
 
-  # Metadata for search engines and social sharing
-  author = "Crawlspace NH"
-  description = "The best little jam band in New Hampshire"
-  shareImage = "images/social.jpg"
-  twitterHandle = "crawlspacenh"
+# Metadata for search engines and social sharing
+author = "Crawlspace NH"
+description = "The best little jam band in New Hampshire"
+shareImage = "images/social.jpg"
+twitterHandle = "crawlspacenh"
 
-  # Favicon
-  favicon = "favicon.ico"
+# Favicon
+favicon = "favicon.ico"
 
-  # Section - Visual
-  [params.visual]
+# Section - Visual
+[params.visual]
 
-    # Image
-    [params.visual.image]
-      enable = true
-      file = "images/background.jpg"
-      position = "center center"
+# Image
+[params.visual.image]
+enable = true
+file = "images/background.jpg"
+position = "center center"
 
-  #   # Video
-  #   [params.visual.video]
-  #     enable = false
-  #     mute = true
-  #     file = "videos/background.mp4"
-  #     # youtubeId = "dk9uNWPP7EA"
+#   # Video
+#   [params.visual.video]
+#     enable = false
+#     mute = true
+#     file = "videos/background.mp4"
+#     # youtubeId = "dk9uNWPP7EA"
 
-  # Links
-  #
-  # Links List #1
-  [[params.links]]
-    [params.links.list1]
-      heading = "About"
+# Links
+#
+# Links List #1
+[[params.links]]
+[params.links.list1]
+heading = "About"
 
-      [[params.links.list1.link]]
-        text = "The Band"
-        url = "the-band.html"
-        new_tab = false
+[[params.links.list1.link]]
+text = "The Band"
+url = "the-band.html"
+new_tab = false
 
-      [[params.links.list1.link]]
-        text = "Live"
-        url = "live.html"
-        new_tab = false
+[[params.links.list1.link]]
+text = "Live"
+url = "live.html"
+new_tab = false
 
-      [[params.links.list1.link]]
-        text = "Archives"
-        url = "archives.html"
-        new_tab = false
+[[params.links.list1.link]]
+text = "Archives"
+url = "archives.html"
+new_tab = false
 
-  # Links List #2
-  [[params.links]]
-    [params.links.list2]
-      heading = "Social"
+# Links List #2
+[[params.links]]
+[params.links.list2]
+heading = "Social"
 
-      [[params.links.list2.link]]
-        text = "Email"
-        url = "mailto:management@crawlspacenh.com"
+[[params.links.list2.link]]
+text = "Email"
+url = "mailto:management@crawlspacenh.com"
 
-      [[params.links.list2.link]]
-        text = "Facebook"
-        url = "https://www.facebook.com/p/Crawlspace-NH-100064934713606/"
-        new_tab = true
+[[params.links.list2.link]]
+text = "Facebook"
+url = "https://www.facebook.com/p/Crawlspace-NH-100064934713606/"
+new_tab = true
 
-      # [[params.links.list2.link]]
-      #   text = "Instagram"
-      #   url = "#"
+# [[params.links.list2.link]]
+#   text = "Instagram"
+#   url = "#"
 
-  # Links List #3
-  # [[params.links]]
-  #   [params.links.list3]
-  #     heading = "Network"
-  #
-  #     [[params.links.list3.link]]
-  #       text = "Link One"
-  #       url = "#"
-  #
-  #     [[params.links.list3.link]]
-  #       text = "Link Two"
-  #       url = "#"
-  #
-  #     [[params.links.list3.link]]
-  #       text = "Link Three"
-  #       url = "#"
+# Links List #3
+# [[params.links]]
+#   [params.links.list3]
+#     heading = "Network"
+#
+#     [[params.links.list3.link]]
+#       text = "Link One"
+#       url = "#"
+#
+#     [[params.links.list3.link]]
+#       text = "Link Two"
+#       url = "#"
+#
+#     [[params.links.list3.link]]
+#       text = "Link Three"
+#       url = "#"
 
-  # The original template is released under the Creative Commons Attribution 3.0 License.
-  # Please keep the original attribution link when using for your own project.
-  # If you'd like to use the template without the attribution, you can check out
-  # the license option via the template author's website: https://onepagelove.com/split
+# The original template is released under the Creative Commons Attribution 3.0 License.
+# Please keep the original attribution link when using for your own project.
+# If you'd like to use the template without the attribution, you can check out
+# the license option via the template author's website: https://onepagelove.com/split
 
 [server]
 [[server.headers]]
-    for = '/**'
-    [server.headers.values]
-      Content-Security-Policy = "default-src 'self'; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src 'self' https://fonts.gstatic.com; img-src 'self' https://dummyimage.com"
-      Referrer-Policy = 'strict-origin-when-cross-origin'
-      X-Content-Type-Options = 'nosniff'
-      X-Frame-Options = 'DENY'
-      X-XSS-Protection = '1; mode=block'
+for = '/**'
+[server.headers.values]
+Content-Security-Policy = "default-src 'self'; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src 'self' https://fonts.gstatic.com; img-src 'self' https://dummyimage.com"
+Referrer-Policy = 'strict-origin-when-cross-origin'
+X-Content-Type-Options = 'nosniff'
+X-Frame-Options = 'DENY'
+X-XSS-Protection = '1; mode=block'
