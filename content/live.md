@@ -34,7 +34,7 @@ Plymouth, NH 03301 ([map](https://maps.app.goo.gl/Jt4WxFVbJfPR34Dr6))
 6 pm - 9 pm ET
 
 [Loon Mountain Ski Resort](https://www.loonmtn.com/) \
-Black Diamond Pub \
+Paul Bunyan Room \
 90 Loon Mountain Rd \
 Lincoln, NH 03251 ([map](https://maps.app.goo.gl/3LuSR2T4WG8WqAjp8))
 
