@@ -18,5 +18,30 @@ Concord, NH 03301 ([map](https://maps.app.goo.gl/xidvocii6ZSaLoY59))
 6 pm - 9 pm ET
 
 [Biederman's Deli](https://www.biedermans.com/) \
-Chase Street \
+83 Main Street \
+Plymouth, NH 03301 ([map](https://maps.app.goo.gl/EVRNPVS2ssiz9eyY6))
+
+# Friday, February 7, 2025
+
+6 pm - 9 pm ET
+
+[Biederman's Deli](https://www.biedermans.com/) \
+83 Main Street \
+Plymouth, NH 03301 ([map](https://maps.app.goo.gl/Jt4WxFVbJfPR34Dr6))
+
+# Saturday, February 8, 2025
+
+6 pm - 9 pm ET
+
+[Loon Mountain Ski Resort](https://www.loonmtn.com/) \
+Black Diamond Pub \
+90 Loon Mountain Rd \
+Lincoln, NH 03251 ([map](https://maps.app.goo.gl/3LuSR2T4WG8WqAjp8))
+
+# Friday, March 21, 2025
+
+6 pm - 9 pm ET
+
+[Biederman's Deli](https://www.biedermans.com/) \
+83 Main Street \
 Plymouth, NH 03301 ([map](https://maps.app.goo.gl/Jt4WxFVbJfPR34Dr6))
