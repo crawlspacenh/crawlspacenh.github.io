@@ -5,7 +5,7 @@ draft = false
 +++
 <!-- markdownlint-disable MD025 MD033 MD045 -->
 
-# Friday, December 20, 2024
+# Friday, January 24, 2024
 
 8 pm - 12 pm ET
 
@@ -13,13 +13,6 @@ draft = false
 16 Bicentennial Square \
 Concord, NH 03301 ([map](https://maps.app.goo.gl/xidvocii6ZSaLoY59))
 
-# Friday, January 10, 2025
-
-6 pm - 9 pm ET
-
-[Biederman's Deli](https://www.biedermans.com/) \
-83 Main Street \
-Plymouth, NH 03301 ([map](https://maps.app.goo.gl/EVRNPVS2ssiz9eyY6))
 
 # Friday, February 7, 2025
 
