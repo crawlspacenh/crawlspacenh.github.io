@@ -7,6 +7,8 @@ draft = false
 
 Click on any poster to view or download the full size image.
 
+[<img src="/images/posters/2025-02-08.jpg" width=200 />](/images/posters/2025-02-08.jpg)
+[<img src="/images/posters/2025-01-24.jpg" width=200 />](/images/posters/2025-01-24.jpg)
 [<img src="/images/posters/2025-01-10.jpg" width=200 />](/images/posters/2025-01-10.jpg)
 [<img src="/images/posters/2024-12-20.jpg" width=200 />](/images/posters/2024-12-20.jpg)
 [<img src="/images/posters/2024-10-12.jpg" width=200 />](/images/posters/2024-10-12.jpg)
