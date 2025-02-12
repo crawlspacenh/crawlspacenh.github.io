@@ -8,7 +8,7 @@ draft = false
 
 #### Mike D'Amante - Vocals, Guitars, Synths
 
-#### Andy Boeckler - Guitars
+#### Andy Boeckeler - Guitars
 
 #### Bobby Decorte - Bass Guitars, Vocals
 
