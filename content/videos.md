@@ -5,18 +5,17 @@ draft = false
 +++
 <!-- markdownlint-disable MD025 MD033 MD045 MD013 -->
 
-## Funky Bitch - BNH Stage - 2024/07/20
+## BNH Stage - 2024/07/20
 
-{{< youtube id=qibuh_Li0vo title="Crawlspace - Funky Bitch - BNH Stage - 2024/07/20" loading=lazy >}}
+{{< youtubepl id=PLxS9axl1j35tF_RNGhADtkk5VlydS2gFN title="Crawlspace - BNH Stage - 2024/07/20" >}}
 
-&nbsp;
-
-## West LA Fade Away - BNH Stage - 2024/07/20
-
-{{< youtube id=MTiLyGc-fx0 title="Crawlspace - West LA Fade Away - BNH Stage - 2024/07/20" loading=lazy >}}
-
-&nbsp;
-
-## Eyes of the World - BNH Stage - 2024/07/20
-
-{{< youtube id=kZ-3rGAqTYo title="Crawlspace - Eyes of the World - BNH Stage - 2024/07/20" loading=lazy >}}
+* Deal
+* Second that Emotion
+* Jack Straw
+* Funky Bitch
+* Eyes of the World
+* Can't You Hear Me Knockin'
+* West LA Fadeaway
+* China Cat Sunflower
+* I Know You Rider
+* Althea
