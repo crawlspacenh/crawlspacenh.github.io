@@ -21,3 +21,4 @@ Click on any poster to view or download the full size image.
 [<img src="/images/posters/2024-01-05.jpg" width=200 />](/images/posters/2024-01-05.jpg)
 [<img src="/images/posters/2023-10-20.jpg" width=200 />](/images/posters/2023-10-20.jpg)
 [<img src="/images/posters/2023-09-22.jpg" width=200 />](/images/posters/2023-09-22.jpg)
+[<img src="/images/posters/2023-01-13.jpg" width=200 />](/images/posters/2023-01-13.jpg)
