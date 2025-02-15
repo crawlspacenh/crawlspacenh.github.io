@@ -52,7 +52,7 @@ td.right {
   </tr>
   <tr>
     <td>
-      <img src="/images/headshots/bobby-001.jpg" width=200 />
+      <img src="/images/headshots/bobby-002.jpg" width=200 />
     </td>
     <td class="left">
       <b>Bobby Decorte</b><br />Bass Guitars<br />Vocals
