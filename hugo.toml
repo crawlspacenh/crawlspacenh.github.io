@@ -88,14 +88,14 @@ text = "Email"
 url = "mailto:management@crawlspacenh.com"
 
 [[params.links.list2.link]]
-text = "Soundcloud"
-url = "https://soundcloud.com/crawlspace-nh"
-new_tab = true
-
-[[params.links.list2.link]]
 text = "Facebook"
 url = "https://www.facebook.com/p/Crawlspace-NH-100064934713606/"
 new_tab = true
+
+# [[params.links.list2.link]]
+# text = "Soundcloud"
+# url = "https://soundcloud.com/crawlspace-nh"
+# new_tab = true
 
 # [[params.links.list2.link]]
 #   text = "Instagram"
