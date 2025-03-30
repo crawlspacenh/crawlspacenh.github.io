@@ -5,14 +5,6 @@ draft = false
 +++
 <!-- markdownlint-disable MD025 MD033 MD045 -->
 
-# Friday, March 21, 2025
-
-6 pm - 9 pm ET
-
-[Biederman's Deli](https://www.biedermans.com/) \
-83 Main Street \
-Plymouth, NH 03301 ([map](https://maps.app.goo.gl/Jt4WxFVbJfPR34Dr6))
-
 # Friday, April 11, 2025
 
 8 pm - 12 am ET
