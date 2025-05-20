@@ -25,7 +25,7 @@ site generator.
    git submodule init
    git submodule update
    ```
-   
+
    Or clone with submodules in one command:
    ```
    git clone --recurse-submodules https://github.com/your-username/crawlspace-website.git
