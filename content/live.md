@@ -5,29 +5,13 @@ draft = false
 +++
 <!-- markdownlint-disable MD025 MD033 MD045 -->
 
-# Friday, April 11, 2025
+# Saturday, June 7, 2025
 
 8 pm - 12 am ET
 
 [Penuche's Ale House](https://www.facebook.com/penuches.concord/) \
 16 Bicentennial Square \
 Concord, NH 03301 ([map](https://maps.app.goo.gl/vzgQJRZXJCLWzoY99))
-
-# Friday, April 18, 2025
-
-6 pm - 9 pm ET
-
-[Biederman's Deli](https://www.biedermans.com/) \
-83 Main Street \
-Plymouth, NH 03301 ([map](https://maps.app.goo.gl/Jt4WxFVbJfPR34Dr6))
-
-# Friday, May 16, 2025
-
-6 pm - 9 pm ET
-
-[Biederman's Deli](https://www.biedermans.com/) \
-83 Main Street \
-Plymouth, NH 03301 ([map](https://maps.app.goo.gl/Jt4WxFVbJfPR34Dr6))
 
 # Friday, June 20, 2025
 

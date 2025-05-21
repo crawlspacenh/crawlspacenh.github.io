@@ -12,7 +12,7 @@ draft = false
     gap: 20px;
     margin-top: 20px;
   }
-  
+
   .poster-item {
     aspect-ratio: 1/1.5; /* Common poster ratio */
     overflow: hidden;
@@ -21,19 +21,19 @@ draft = false
     box-shadow: 0 2px 4px rgba(0,0,0,0.1);
     transition: transform 0.3s ease, box-shadow 0.3s ease;
   }
-  
+
   .poster-item:hover {
     transform: translateY(-5px);
     box-shadow: 0 5px 15px rgba(0,0,0,0.2);
   }
-  
+
   .poster-item img {
     width: 100%;
     height: 100%;
     object-fit: cover;
     object-position: center;
   }
-  
+
   /* Responsive adjustments */
   @media (max-width: 768px) {
     .poster-grid {
@@ -41,7 +41,7 @@ draft = false
       gap: 15px;
     }
   }
-  
+
   @media (max-width: 480px) {
     .poster-grid {
       grid-template-columns: repeat(auto-fill, minmax(120px, 1fr));
@@ -56,6 +56,11 @@ Click on any poster to view or download the full size image.
   <div class="poster-item">
     <a href="/images/posters/2025-06-20.jpg" target="_blank">
       <img src="/images/posters/2025-06-20.jpg" alt="Poster for 2025-06-20 show" />
+    </a>
+  </div>
+  <div class="poster-item">
+    <a href="/images/posters/2025-06-07.jpg" target="_blank">
+      <img src="/images/posters/2025-06-07.jpg" alt="Poster for 2025-06-07 show" />
     </a>
   </div>
   <div class="poster-item">
