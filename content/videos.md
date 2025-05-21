@@ -84,54 +84,13 @@ draft = false
 <div class="video-showcase">
   <div class="video-container">
     <div class="video-header">
-      <h2 class="video-title">Biederman's Deli</h2>
-      <span class="video-date">February 7, 2025</span>
-    </div>
-    <div class="video-embed">
-      {{< youtubepl id=PLxS9axl1j35v_RoQtCo30D3fRU4djCffT title="Crawlspace - Biederman's Deli - 2025/02/07" >}}
-    </div>
-    <div class="video-description">
-      Crawlspace live at Biederman's Deli in Nashua, NH. The band delivered a high-energy set featuring improvisational jams and fan favorites.
-    </div>
-  </div>
-
-  <div class="video-container">
-    <div class="video-header">
-      <h2 class="video-title">Biederman's Deli</h2>
-      <span class="video-date">January 10, 2025</span>
-    </div>
-    <div class="video-embed">
-      {{< youtubepl id=PLxS9axl1j35ubPr4sb3p37KMq8ZZSbA_J title="Crawlspace - Biederman's Deli - 2025/01/10" >}}
-    </div>
-    <div class="video-description">
-      The band's first show of 2025 at Biederman's Deli packed the house for a night of original music and extended improvisations.
-    </div>
-  </div>
-
-  <div class="video-container">
-    <div class="video-header">
-      <h2 class="video-title">BNH Stage</h2>
-      <span class="video-date">July 20, 2024</span>
-    </div>
-    <div class="video-embed">
-      {{< youtubepl id=PLxS9axl1j35tF_RNGhADtkk5VlydS2gFN title="Crawlspace - BNH Stage - 2024/07/20" >}}
-    </div>
-    <div class="video-description">
-      Crawlspace performing outdoors at the BNH Stage during the height of summer. This show featured guest appearances and new material.
-    </div>
-  </div>
-</div>
-=======
-<div class="video-showcase">
-  <div class="video-container">
-    <div class="video-header">
       <h2 class="video-title-with-date">Biederman's Deli <span class="video-date-inline">- 07/02/2025</span></h2>
     </div>
     <div class="video-embed">
       {{< youtubepl id=PLxS9axl1j35v_RoQtCo30D3fRU4djCffT title="Crawlspace - Biederman's Deli - 2025/02/07" >}}
     </div>
     <div class="video-description">
-      Crawlspace live at Biederman's Deli in Nashua, NH. The band delivered a high-energy set featuring improvisational jams and fan favorites.
+      Crawlspace live at Biederman's Deli in Plymouth, NH. The band delivered a high-energy set featuring improvisational jams and fan favorites.
     </div>
   </div>
 
@@ -143,7 +102,7 @@ draft = false
       {{< youtubepl id=PLxS9axl1j35ubPr4sb3p37KMq8ZZSbA_J title="Crawlspace - Biederman's Deli - 2025/01/10" >}}
     </div>
     <div class="video-description">
-      The band's first show of 2025 at Biederman's Deli packed the house for a night of original music and extended improvisations.
+      The band's first show of 2025 at Biederman's Deli packed the house for a night of great songs and extended improvisations.
     </div>
   </div>
 
@@ -155,7 +114,7 @@ draft = false
       {{< youtubepl id=PLxS9axl1j35tF_RNGhADtkk5VlydS2gFN title="Crawlspace - BNH Stage - 2024/07/20" >}}
     </div>
     <div class="video-description">
-      Crawlspace performing outdoors at the BNH Stage during the height of summer. This show featured guest appearances and new material.
+      Crawlspace performing at the BNH Stage in Concord, NH during the height of summer.
     </div>
   </div>
 </div>
