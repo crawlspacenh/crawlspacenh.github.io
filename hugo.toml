@@ -84,8 +84,9 @@ new_tab = false
 heading = "Social"
 
 [[params.links.list2.link]]
-text = "Email"
-url = "mailto:management@crawlspacenh.com"
+text = "Contact & Booking"
+url = "contact.html"
+new_tab = false
 
 [[params.links.list2.link]]
 text = "Facebook"
