@@ -51,7 +51,7 @@ draft = false
     line-height: 1.2;
     display: block;
   }
-  
+
   h2.video-title-with-date {
     margin: 0;
     padding: 0;
@@ -65,7 +65,6 @@ draft = false
     color: #848d96;
     font-weight: 400;
     opacity: 0.8;
-    float: right;
   }
 
   .video-embed {
@@ -103,7 +102,7 @@ draft = false
 <div class="video-showcase">
   <div class="video-container">
     <div class="video-header">
-      <h2 class="video-title-with-date">Biederman's Deli <span class="video-date-inline">07/02/2025</span></h2>
+      <h2 class="video-title-with-date">Biederman's Deli <span class="video-date-inline"><br>07/02/2025</span></h2>
     </div>
     <div class="video-embed">
       {{< youtubepl id=PLxS9axl1j35v_RoQtCo30D3fRU4djCffT title="Crawlspace - Biederman's Deli - 2025/02/07" >}}
@@ -115,7 +114,7 @@ draft = false
 
   <div class="video-container">
     <div class="video-header">
-      <h2 class="video-title-with-date">Biederman's Deli <span class="video-date-inline">10/01/2025</span></h2>
+      <h2 class="video-title-with-date">Biederman's Deli <span class="video-date-inline"><br>10/01/2025</span></h2>
     </div>
     <div class="video-embed">
       {{< youtubepl id=PLxS9axl1j35ubPr4sb3p37KMq8ZZSbA_J title="Crawlspace - Biederman's Deli - 2025/01/10" >}}
@@ -127,7 +126,7 @@ draft = false
 
   <div class="video-container">
     <div class="video-header">
-      <h2 class="video-title-with-date">BNH Stage <span class="video-date-inline">20/07/2024</span></h2>
+      <h2 class="video-title-with-date">BNH Stage <span class="video-date-inline"><br>20/07/2024</span></h2>
     </div>
     <div class="video-embed">
       {{< youtubepl id=PLxS9axl1j35tF_RNGhADtkk5VlydS2gFN title="Crawlspace - BNH Stage - 2024/07/20" >}}
