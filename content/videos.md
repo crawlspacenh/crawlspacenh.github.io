@@ -9,6 +9,11 @@ draft = false
   .video-showcase {
     margin: 0 auto;
     max-width: 1200px;
+    font-family: "Lora", serif;
+    font-size: 21px;
+    line-height: 33px;
+    letter-spacing: -0.2px;
+    color: #848d96;
   }
 
   .video-container {
@@ -33,19 +38,31 @@ draft = false
     padding: 20px 30px;
     background: linear-gradient(90deg, rgba(60,60,60,0.8) 0%, rgba(30,30,30,0.8) 100%);
     border-bottom: 1px solid rgba(255,255,255,0.1);
+    color: #47bec7;
   }
 
   .video-title-with-date {
     margin: 0;
-    color: #fff;
+    padding: 0;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 600;
     font-size: 0.85em;
-    font-weight: 700;
     text-shadow: 0 2px 4px rgba(0,0,0,0.5);
     line-height: 1.2;
+    display: block;
+  }
+  
+  h2.video-title-with-date {
+    margin: 0;
+    padding: 0;
+    margin-block-start: 0;
+    margin-block-end: 0;
+    line-height: 1;
   }
 
   .video-date-inline {
     font-size: 0.75em;
+    color: #848d96;
     font-weight: 400;
     opacity: 0.8;
     float: right;
@@ -71,8 +88,8 @@ draft = false
     padding: 20px 30px;
     color: rgba(255,255,255,0.8);
     font-family: "Lora", serif;
-    font-size: 18.9px; /* Reduced by 10% from 21px */
-    line-height: 29.7px; /* Reduced by 10% from 33px to maintain proportion */
+    font-size: 15.75px; /* Reduced by 25% from 21px */
+    line-height: 24.75px; /* Reduced by 25% from 33px to maintain proportion */
     letter-spacing: -0.2px;
   }
 

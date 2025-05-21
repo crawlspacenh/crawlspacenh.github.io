@@ -5,9 +5,24 @@ draft = false
 +++
 <!-- markdownlint-disable MD025 MD033 MD045 -->
 <style>
+.band-content {
+  font-family: "Lora", serif;
+  font-size: 21px;
+  line-height: 33px;
+  letter-spacing: -0.2px;
+  color: #848d96;
+}
+
+.band-content b {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 600;
+  color: #47bec7;
+}
+
 table, th, td {
   border: 0px solid black;
   border-collapse: collapse;
+  font-family: "Lora", serif;
 }
 table.center {
   margin-left: auto;
@@ -16,6 +31,10 @@ table.center {
 td {
   vertical-align: top;
   padding: 15px;
+  font-size: 21px;
+  line-height: 33px;
+  letter-spacing: -0.2px;
+  color: #848d96;
 }
 td.left {
   text-align: left;
@@ -25,6 +44,7 @@ td.right {
 }
 </style>
 
+<div class="band-content">
 <table class="center">
   <tr>
     <td class="right">
@@ -67,3 +87,4 @@ td.right {
     </td>
   </tr>
 </table>
+</div>
