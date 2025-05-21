@@ -78,15 +78,19 @@ text = "Posters"
 url = "posters.html"
 new_tab = false
 
+[[params.links.list1.link]]
+text = "Bookings"
+url = "contact.html"
+new_tab = false
+
 # Links List #2
 [[params.links]]
 [params.links.list2]
 heading = "Social"
 
 [[params.links.list2.link]]
-text = "Contact & Booking"
-url = "contact.html"
-new_tab = false
+text = "Email"
+url = "mailto:fans@crawlspacenh.com"
 
 [[params.links.list2.link]]
 text = "Facebook"

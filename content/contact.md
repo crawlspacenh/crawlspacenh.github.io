@@ -150,10 +150,10 @@ Are you interested in booking Crawlspace for your venue, private event, or festi
 <div class="contact-info">
   <h2>Direct Contact</h2>
   <div class="contact-method">
-    <strong>Email:</strong> booking@crawlspacenh.com
+    <strong>Email:</strong> <a href="mailto:booking@crawlspacenh.com">booking@crawlspacenh.com</a>
   </div>
 
-  <p>We typically respond to all inquiries within 24-48 hours. For urgent booking matters, please call the number above.</p>
+  <p>We typically respond to all inquiries within 24-48 hours.</p>
 
   <h2>Technical Requirements</h2>
   <p>Crawlspace is a five-piece band consisting of three guitars, bass, and drums with multiple vocalists. We can provide our own PA system for smaller venues, but have technical requirements for larger spaces.</p>
