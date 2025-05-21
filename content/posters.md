@@ -50,8 +50,6 @@ draft = false
   }
 </style>
 
-Click on any poster to view or download the full size image.
-
 <div class="poster-grid">
   <div class="poster-item">
     <a href="/images/posters/2025-06-20.jpg" target="_blank">
