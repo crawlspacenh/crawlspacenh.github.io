@@ -50,3 +50,4 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 - Use structured data for events and performances when possible
 - For image optimization, balance quality and file size
 - Ensure the CNAME file is preserved during deployments to maintain the custom domain
+- Never test changes made to the site; all testing will be done manually after file changes are made
