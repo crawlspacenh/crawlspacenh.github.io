@@ -5,7 +5,6 @@ draft = false
 +++
 <!-- markdownlint-disable MD025 MD033 MD045 MD013 -->
 
-## Biederman's Deli - 2025/02/07
 <style>
   .video-showcase {
     margin: 0 auto;
@@ -81,6 +80,7 @@ draft = false
     }
   }
 </style>
+
 <div class="video-showcase">
   <div class="video-container">
     <div class="video-header">
