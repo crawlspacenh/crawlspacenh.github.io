@@ -35,22 +35,6 @@ draft = false
 
 <div class="live-events">
 
-# Saturday, June 7, 2025
-
-8 pm - 12 am ET
-
-[Penuche's Ale House](https://www.facebook.com/penuches.concord/) \
-16 Bicentennial Square \
-Concord, NH 03301 ([map](https://maps.app.goo.gl/vzgQJRZXJCLWzoY99))
-
-# Friday, June 20, 2025
-
-6 pm - 9 pm ET
-
-[Biederman's Deli](https://www.biedermans.com/) \
-83 Main Street \
-Plymouth, NH 03301 ([map](https://maps.app.goo.gl/Jt4WxFVbJfPR34Dr6))
-
 # Friday, July 11, 2025
 
 6 pm - 9 pm ET
@@ -66,6 +50,14 @@ Plymouth, NH 03301 ([map](https://maps.app.goo.gl/Jt4WxFVbJfPR34Dr6))
 [Feathered Friend Brewing Company](https://www.featheredfriendbrewing.com/) \
 231 S Main Street\
 Concord, NH 03301 ([map](https://maps.app.goo.gl/u2o8mnp3TmQoPfi46))
+
+# Saturday, July 26, 2025
+
+4 pm - 9 pm ET
+
+[The Barnyard](https://www.candiabarnyardvenue.com/) \
+285 Old Candia Rd \
+Candia, NH 03034
 
 # Friday, August 22, 2025
 
