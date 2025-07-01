@@ -79,14 +79,19 @@ url = "posters.html"
 new_tab = false
 
 [[params.links.list1.link]]
-text = "Bookings"
-url = "contact.html"
+text = "Merch"
+url = "merch.html"
 new_tab = false
 
 # Links List #2
 [[params.links]]
 [params.links.list2]
 heading = "Social"
+
+[[params.links.list2.link]]
+text = "Bookings"
+url = "contact.html"
+new_tab = false
 
 [[params.links.list2.link]]
 text = "Email"
