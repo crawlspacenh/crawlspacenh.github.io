@@ -43,6 +43,11 @@ draft = false
 83 Main Street \
 Plymouth, NH 03301 ([map](https://maps.app.goo.gl/Jt4WxFVbJfPR34Dr6))
 
+# Wednesday, July 23, 2025
+
+Penacook Park \
+Concord, NH ([map](https://maps.app.goo.gl/XkijJT2VbstW4yV49))
+
 # Friday, July 25, 2025
 
 6 pm - 9 pm ET
