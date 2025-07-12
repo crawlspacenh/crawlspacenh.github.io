@@ -12,20 +12,20 @@ draft = false
     line-height: 33px;
     letter-spacing: -0.2px;
   }
-  
+
   .live-events h1 {
     font-family: "Montserrat", sans-serif;
     font-weight: 600;
     margin-top: 35px;
     color: #47bec7;
   }
-  
+
   .live-events a {
     color: #848d96;
     transition-duration: 0.5s;
     border-bottom: 1px dotted #848d96;
   }
-  
+
   .live-events a:hover {
     color: #CA486d;
     transition-duration: 0.1s;
@@ -34,14 +34,6 @@ draft = false
 </style>
 
 <div class="live-events">
-
-# Friday, July 11, 2025
-
-6 pm - 9 pm ET
-
-[Biederman's Deli](https://www.biedermans.com/) \
-83 Main Street \
-Plymouth, NH 03301 ([map](https://maps.app.goo.gl/Jt4WxFVbJfPR34Dr6))
 
 # Wednesday, July 23, 2025
 
