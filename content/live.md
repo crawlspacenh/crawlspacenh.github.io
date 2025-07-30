@@ -35,26 +35,13 @@ draft = false
 
 <div class="live-events">
 
-# Wednesday, July 23, 2025
+# Saturday, August 2, 2025
 
-Penacook Park \
-Concord, NH ([map](https://maps.app.goo.gl/XkijJT2VbstW4yV49))
+8 pm - 11 pm ET
 
-# Friday, July 25, 2025
-
-6 pm - 9 pm ET
-
-[Feathered Friend Brewing Company](https://www.featheredfriendbrewing.com/) \
-231 S Main Street\
-Concord, NH 03301 ([map](https://maps.app.goo.gl/u2o8mnp3TmQoPfi46))
-
-# Saturday, July 26, 2025
-
-4 pm - 9 pm ET
-
-[The Barnyard](https://www.candiabarnyardvenue.com/) \
-285 Old Candia Rd \
-Candia, NH 03034
+[The Grateful Skier](https://www.gratefulskier.com/) \
+11 Pollard Road \
+Lincoln, NH 03251
 
 # Friday, August 22, 2025
 
