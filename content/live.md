@@ -35,14 +35,6 @@ draft = false
 
 <div class="live-events">
 
-# Saturday, August 2, 2025
-
-8 pm - 11 pm ET
-
-[The Grateful Skier](https://www.gratefulskier.com/) \
-11 Pollard Road \
-Lincoln, NH 03251
-
 # Friday, August 22, 2025
 
 6 pm - 9 pm ET
