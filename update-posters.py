@@ -22,7 +22,8 @@ OUTPUT_FILE = SCRIPT_DIR / "content" / "posters.md"
 # Template for the posters.md file
 HEADER_TEMPLATE = """+++
 title = 'Posters'
-date = {date}
+date = 2024-08-13T23:03:12-04:00
+lastmod = {lastmod}
 draft = false
 +++
 <!-- markdownlint-disable MD025 MD033 MD045 -->
@@ -143,7 +144,7 @@ def generate_posters_md(poster_files):
     # Insert colon in timezone offset (e.g., -0400 -> -04:00)
     current_date = current_date[:-2] + ":" + current_date[-2:]
 
-    content = HEADER_TEMPLATE.format(date=current_date)
+    content = HEADER_TEMPLATE.format(lastmod=current_date)
 
     for filename in poster_files:
         if not validate_filename(filename):
