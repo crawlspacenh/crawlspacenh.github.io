@@ -12,7 +12,7 @@ Usage:
 
 import os
 from pathlib import Path
-from datetime import datetime
+from datetime import datetime, timezone
 
 # Configuration
 SCRIPT_DIR = Path(__file__).parent
@@ -20,9 +20,9 @@ POSTERS_DIR = SCRIPT_DIR / "static" / "images" / "posters"
 OUTPUT_FILE = SCRIPT_DIR / "content" / "posters.md"
 
 # Template for the posters.md file
-HEADER = """+++
+HEADER_TEMPLATE = """+++
 title = 'Posters'
-date = 2024-08-13T23:03:12-04:00
+date = {date}
 draft = false
 +++
 <!-- markdownlint-disable MD025 MD033 MD045 -->
@@ -137,7 +137,13 @@ def generate_posters_md(poster_files):
     Returns:
         str: Complete content for posters.md
     """
-    content = HEADER
+    # Generate current timestamp in Hugo's expected format (ISO 8601 with timezone)
+    now = datetime.now(timezone.utc).astimezone()
+    current_date = now.strftime("%Y-%m-%dT%H:%M:%S%z")
+    # Insert colon in timezone offset (e.g., -0400 -> -04:00)
+    current_date = current_date[:-2] + ":" + current_date[-2:]
+
+    content = HEADER_TEMPLATE.format(date=current_date)
 
     for filename in poster_files:
         if not validate_filename(filename):
