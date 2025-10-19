@@ -15,6 +15,15 @@ copyright = "&copy;2024 Crawlspace NH"
 # Site Config
 ignoreLogs = ['warning-goldmark-raw-html']
 
+# Files to ignore when building (not copied to public/)
+ignoreFiles = [
+  '\.py$',      # Python scripts
+  '\.sh$',      # Shell scripts
+  'CLAUDE\.md', # Claude Code instructions
+  'README\.md', # Repository readme
+  'TODO\.md'    # Todo file
+]
+
 # Goldmark Render Engine Settings
 [markup.goldmark.renderer]
 unsafe = true # Allows embedding HTML in Markdown
