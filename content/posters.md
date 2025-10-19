@@ -1,6 +1,7 @@
 +++
 title = 'Posters'
-date = 2025-10-19T14:30:00-04:00
+date = 2024-08-13T23:03:12-04:00
+lastmod = 2025-10-19T14:35:00-04:00
 draft = false
 +++
 <!-- markdownlint-disable MD025 MD033 MD045 -->
