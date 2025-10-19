@@ -1,6 +1,7 @@
 +++
 title = 'About'
 date = 2024-08-13T22:54:04-04:00
+lastmod = 2025-10-19T14:35:00-04:00
 visual.image.enable = true
 draft = false
 +++

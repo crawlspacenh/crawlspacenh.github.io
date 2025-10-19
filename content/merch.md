@@ -1,6 +1,7 @@
 +++
 title = "Merchandise"
 description = "Official Crawlspace merchandise - stickers, t-shirts, and more!"
+lastmod = 2025-10-19T14:35:00-04:00
 draft = false
 +++
 
