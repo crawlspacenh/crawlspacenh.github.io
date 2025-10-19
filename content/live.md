@@ -1,5 +1,6 @@
 +++
 title = 'Live'
+description = 'Upcoming Crawlspace live shows and concerts in New Hampshire. See where and when to catch us live'
 date = 2024-08-13T23:03:09-04:00
 lastmod = 2025-10-19T14:35:00-04:00
 draft = false

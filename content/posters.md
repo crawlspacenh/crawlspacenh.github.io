@@ -1,5 +1,6 @@
 +++
 title = 'Posters'
+description = 'Collection of Crawlspace show posters and flyers from past performances and upcoming gigs'
 date = 2024-08-13T23:03:12-04:00
 lastmod = 2025-10-19T14:35:00-04:00
 draft = false

@@ -1,5 +1,6 @@
 +++
 title = 'Contact & Booking'
+description = 'Book Crawlspace for your venue, private event, or festival. Contact us for availability and booking information'
 date = 2025-05-20T12:00:00-04:00
 lastmod = 2025-10-19T14:35:00-04:00
 draft = false

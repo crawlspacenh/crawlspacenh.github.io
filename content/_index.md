@@ -1,6 +1,7 @@
 +++
 title = 'Crawlspace'
 tagline = 'The best little jam band in New Hampshire'
+description = 'Crawlspace - A high-energy improvisational jam band from New Hampshire blending rock, funk, and blues with tight musicianship and spontaneous grooves'
 date = 2024-08-13T22:52:13-04:00
 lastmod = 2025-10-19T14:35:00-04:00
 visual.image.enable = true
