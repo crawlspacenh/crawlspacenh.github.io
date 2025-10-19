@@ -15,7 +15,7 @@ from pathlib import Path
 from datetime import datetime, timezone
 
 # Configuration
-SCRIPT_DIR = Path(__file__).parent
+SCRIPT_DIR = Path(__file__).parent.parent  # Go up to repo root from scripts/
 POSTERS_DIR = SCRIPT_DIR / "static" / "images" / "posters"
 OUTPUT_FILE = SCRIPT_DIR / "content" / "posters.md"
 

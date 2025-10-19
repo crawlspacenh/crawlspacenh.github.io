@@ -7,4 +7,4 @@
 #
 
 cd "$(dirname "$0")"
-python3 update-posters.py
+python3 scripts/update-posters.py
