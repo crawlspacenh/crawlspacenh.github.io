@@ -45,6 +45,15 @@ draft = false
 83 Main Street \
 Plymouth, NH 03301 ([map](https://maps.app.goo.gl/Jt4WxFVbJfPR34Dr6))
 
+# Saturday, November 1, 2025
+
+8 pm - 12 am ET
+
+[Penuche's Ale House](https://www.facebook.com/penuches.concord/) \
+16 Bicentennial Square \
+Concord, NH 03301 ([map](https://maps.app.goo.gl/vzgQJRZXJCLWzoY99))
+
+
 # Friday, November 21, 2025
 
 6 pm - 9 pm ET

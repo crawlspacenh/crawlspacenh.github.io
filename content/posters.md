@@ -54,6 +54,11 @@ draft = false
 
 <div class="poster-grid">
   <div class="poster-item">
+    <a href="/images/posters/2025-11-01.jpg" target="_blank">
+      <img src="/images/posters/2025-11-01.jpg" alt="Poster for 2025-11-01 show" />
+    </a>
+  </div>
+  <div class="poster-item">
     <a href="/images/posters/2025-10-31.jpg" target="_blank">
       <img src="/images/posters/2025-10-31.jpg" alt="Poster for 2025-10-31 show" />
     </a>
