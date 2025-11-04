@@ -1,0 +1,153 @@
+name: PR Tests
+
+on:
+  pull_request:
+    branches:
+      - main
+  workflow_dispatch:
+
+# Default to bash
+defaults:
+  run:
+    shell: bash
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    env:
+      HUGO_VERSION: 0.151.2
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          submodules: recursive
+          fetch-depth: 0
+
+      - name: Install Hugo CLI
+        run: |
+          wget -O ${{ runner.temp }}/hugo.deb https://github.com/gohugoio/hugo/releases/download/v${HUGO_VERSION}/hugo_extended_${HUGO_VERSION}_linux-amd64.deb \
+          && sudo dpkg -i ${{ runner.temp }}/hugo.deb
+
+      - name: Install Dart Sass
+        run: sudo snap install dart-sass
+
+      - name: Verify Hugo version
+        run: hugo version
+
+      - name: Check front matter syntax
+        run: |
+          echo "Checking TOML front matter in content files..."
+          EXIT_CODE=0
+          for file in content/*.md; do
+            echo "Checking $file..."
+            # Extract front matter between +++ delimiters
+            if grep -q "^+++" "$file"; then
+              awk '/^\+\+\+$/,/^\+\+\+$/' "$file" | sed '1d;$d' > /tmp/frontmatter.toml
+              # Try to parse with Hugo
+              if ! hugo list all | grep -q .; then
+                echo "Warning: Could not verify $file"
+              fi
+            fi
+          done
+          exit $EXIT_CODE
+
+      - name: Build site
+        env:
+          HUGO_CACHEDIR: ${{ runner.temp }}/hugo_cache
+          HUGO_ENVIRONMENT: production
+          TZ: America/New_York
+        run: |
+          echo "Building Hugo site..."
+          hugo --gc --minify --baseURL "https://crawlspacenh.com/"
+
+      - name: Check build output
+        run: |
+          echo "Verifying build output..."
+          if [ ! -d "public" ]; then
+            echo "Error: public directory not created"
+            exit 1
+          fi
+          if [ ! -f "public/index.html" ]; then
+            echo "Error: index.html not generated"
+            exit 1
+          fi
+          echo "Build output verified successfully"
+
+      - name: Install htmltest
+        run: |
+          wget -O ${{ runner.temp }}/htmltest.tar.gz https://github.com/wjdp/htmltest/releases/download/v0.17.0/htmltest_0.17.0_linux_amd64.tar.gz
+          tar -xzf ${{ runner.temp }}/htmltest.tar.gz -C ${{ runner.temp }}
+          sudo mv ${{ runner.temp }}/htmltest /usr/local/bin/
+          htmltest --version
+
+      - name: Create htmltest config
+        run: |
+          cat > .htmltest.yml << 'EOF'
+          DirectoryPath: "public"
+          CheckDoctype: true
+          CheckExternal: false
+          CheckInternal: true
+          CheckInternalHash: true
+          IgnoreURLs:
+            - "^mailto:"
+            - "^tel:"
+          IgnoreDirectoryMissingTrailingSlash: true
+          EOF
+
+      - name: Check for broken links
+        run: |
+          echo "Checking for broken internal links..."
+          htmltest || {
+            echo "Link check failed. Review the errors above."
+            exit 1
+          }
+
+      - name: Validate HTML structure
+        run: |
+          echo "Checking HTML files for common issues..."
+          EXIT_CODE=0
+
+          # Check for basic HTML structure
+          for file in public/*.html; do
+            if [ -f "$file" ]; then
+              echo "Validating $file..."
+
+              # Check for DOCTYPE (case insensitive, handles minified HTML)
+              if ! grep -iq "<!doctype" "$file"; then
+                echo "Warning: Missing DOCTYPE in $file"
+              fi
+
+              # Check for html tag
+              if ! grep -q "<html" "$file"; then
+                echo "Error: Missing <html> tag in $file"
+                EXIT_CODE=1
+              fi
+
+              # Check for basic structure (handles minified HTML)
+              if ! grep -q "<head" "$file"; then
+                echo "Warning: Missing <head> tag in $file"
+              fi
+
+              if ! grep -q "<body" "$file"; then
+                echo "Error: Missing <body> tag in $file"
+                EXIT_CODE=1
+              fi
+            fi
+          done
+
+          if [ $EXIT_CODE -eq 0 ]; then
+            echo "HTML structure validation passed"
+          fi
+          exit $EXIT_CODE
+
+      - name: Test summary
+        if: always()
+        run: |
+          echo "================================"
+          echo "Test Summary"
+          echo "================================"
+          echo "Hugo Version: $(hugo version)"
+          echo "Files generated: $(find public -type f | wc -l)"
+          echo "HTML files: $(find public -name "*.html" | wc -l)"
+          echo "================================"

@@ -17,11 +17,12 @@ ignoreLogs = ['warning-goldmark-raw-html']
 
 # Files to ignore when building (not copied to public/)
 ignoreFiles = [
-  '\.py$',      # Python scripts
-  '\.sh$',      # Shell scripts
-  'CLAUDE\.md', # Claude Code instructions
-  'README\.md', # Repository readme
-  'TODO\.md'    # Todo file
+  '\.py$',        # Python scripts
+  '\.sh$',        # Shell scripts
+  'CLAUDE\.md',   # Claude Code instructions
+  'README\.md',   # Repository readme
+  'TODO\.md',     # Todo file
+  'TESTING\.md'   # Testing documentation
 ]
 
 # Goldmark Render Engine Settings

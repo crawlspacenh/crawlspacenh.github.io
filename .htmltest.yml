@@ -1,0 +1,9 @@
+DirectoryPath: "public"
+CheckDoctype: true
+CheckExternal: false
+CheckInternal: true
+CheckInternalHash: true
+IgnoreURLs:
+  - "^mailto:"
+  - "^tel:"
+IgnoreDirectoryMissingTrailingSlash: true
