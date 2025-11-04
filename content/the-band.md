@@ -53,12 +53,12 @@ td.right {
       <b>John Jordan</b><br />Drums<br />Vocals
     </td>
     <td>
-      <img src="/images/headshots/john-001.jpg" width=200 />
+      <img src="/images/headshots/john-001.jpg" width=200 alt="John Jordan" />
     </td>
   </tr>
   <tr>
     <td>
-      <img src="/images/headshots/mike-001.jpg" width=200 />
+      <img src="/images/headshots/mike-001.jpg" width=200 alt="Mike D'Amante" />
     </td>
     <td class="left">
       <b>Mike D'Amante</b><br />Vocals<br />Guitars<br />Synths
@@ -69,12 +69,12 @@ td.right {
       <b>Andy Boeckeler</b><br />Guitars
     </td>
     <td>
-      <img src="/images/headshots/andy-001.jpg" width=200 />
+      <img src="/images/headshots/andy-001.jpg" width=200 alt="Andy Boeckeler" />
     </td>
   </tr>
   <tr>
     <td>
-      <img src="/images/headshots/bobby-002.jpg" width=200 />
+      <img src="/images/headshots/bobby-002.jpg" width=200 alt="Bobby Decorte" />
     </td>
     <td class="left">
       <b>Bobby Decorte</b><br />Bass Guitars<br />Vocals
@@ -85,7 +85,7 @@ td.right {
       <b>Ian Chesal</b><br />Guitars
     </td>
     <td>
-      <img src="/images/headshots/ian-001.jpg" width=200 />
+      <img src="/images/headshots/ian-001.jpg" width=200 alt="Ian Chesal" />
     </td>
   </tr>
 </table>
