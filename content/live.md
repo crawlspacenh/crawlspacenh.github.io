@@ -50,7 +50,7 @@ Plymouth, NH 03301 ([map](https://maps.app.goo.gl/Jt4WxFVbJfPR34Dr6))
 8 pm - 12 am ET
 
 [The Grateful Skier](https://www.gratefulskier.com/) \
-11 Pollard Road
+11 Pollard Road \
 Lincoln, NH 03251 ([map](https://maps.app.goo.gl/3iMfxSzBAYaefXT37))
 
 # Saturday, February 7, 2026
@@ -58,7 +58,7 @@ Lincoln, NH 03251 ([map](https://maps.app.goo.gl/3iMfxSzBAYaefXT37))
 8 pm - 12 am ET
 
 [The Grateful Skier](https://www.gratefulskier.com/) \
-11 Pollard Road
+11 Pollard Road \
 Lincoln, NH 03251 ([map](https://maps.app.goo.gl/3iMfxSzBAYaefXT37))
 
 # Saturday, March 14, 2026
@@ -66,7 +66,7 @@ Lincoln, NH 03251 ([map](https://maps.app.goo.gl/3iMfxSzBAYaefXT37))
 8 pm - 12 am ET
 
 [The Grateful Skier](https://www.gratefulskier.com/) \
-11 Pollard Road
+11 Pollard Road \
 Lincoln, NH 03251 ([map](https://maps.app.goo.gl/3iMfxSzBAYaefXT37))
 
 </div>
