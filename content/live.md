@@ -37,14 +37,6 @@ draft = false
 
 <div class="live-events">
 
-# Friday, November 21, 2025
-
-6 pm - 9 pm ET
-
-[Biederman's Deli](https://www.biedermans.com/) \
-83 Main Street \
-Plymouth, NH 03301 ([map](https://maps.app.goo.gl/Jt4WxFVbJfPR34Dr6))
-
 # Friday, December 12, 2025
 
 6 pm - 9 pm ET
@@ -52,5 +44,29 @@ Plymouth, NH 03301 ([map](https://maps.app.goo.gl/Jt4WxFVbJfPR34Dr6))
 [Biederman's Deli](https://www.biedermans.com/) \
 83 Main Street \
 Plymouth, NH 03301 ([map](https://maps.app.goo.gl/Jt4WxFVbJfPR34Dr6))
+
+# Saturday, January 3, 2026
+
+8 pm - 12 am ET
+
+[The Grateful Skier](https://www.gratefulskier.com/) \
+11 Pollard Road
+Lincoln, NH 03251 ([map](https://maps.app.goo.gl/3iMfxSzBAYaefXT37))
+
+# Saturday, February 7, 2026
+
+8 pm - 12 am ET
+
+[The Grateful Skier](https://www.gratefulskier.com/) \
+11 Pollard Road
+Lincoln, NH 03251 ([map](https://maps.app.goo.gl/3iMfxSzBAYaefXT37))
+
+# Saturday, March 14, 2026
+
+8 pm - 12 am ET
+
+[The Grateful Skier](https://www.gratefulskier.com/) \
+11 Pollard Road
+Lincoln, NH 03251 ([map](https://maps.app.goo.gl/3iMfxSzBAYaefXT37))
 
 </div>
