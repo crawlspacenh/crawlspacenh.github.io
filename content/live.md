@@ -53,6 +53,14 @@ Plymouth, NH 03301 ([map](https://maps.app.goo.gl/Jt4WxFVbJfPR34Dr6))
 11 Pollard Road \
 Lincoln, NH 03251 ([map](https://maps.app.goo.gl/3iMfxSzBAYaefXT37))
 
+# Friday, January 30, 2026
+
+6 pm - 9 pm ET
+
+[Biederman's Deli](https://www.biedermans.com/) \
+83 Main Street \
+Plymouth, NH 03301 ([map](https://maps.app.goo.gl/Jt4WxFVbJfPR34Dr6))
+
 # Saturday, February 7, 2026
 
 8 pm - 12 am ET
@@ -61,6 +69,14 @@ Lincoln, NH 03251 ([map](https://maps.app.goo.gl/3iMfxSzBAYaefXT37))
 11 Pollard Road \
 Lincoln, NH 03251 ([map](https://maps.app.goo.gl/3iMfxSzBAYaefXT37))
 
+# Friday, February 27, 2026
+
+6 pm - 9 pm ET
+
+[Biederman's Deli](https://www.biedermans.com/) \
+83 Main Street \
+Plymouth, NH 03301 ([map](https://maps.app.goo.gl/Jt4WxFVbJfPR34Dr6))
+
 # Saturday, March 14, 2026
 
 8 pm - 12 am ET
@@ -68,5 +84,101 @@ Lincoln, NH 03251 ([map](https://maps.app.goo.gl/3iMfxSzBAYaefXT37))
 [The Grateful Skier](https://www.gratefulskier.com/) \
 11 Pollard Road \
 Lincoln, NH 03251 ([map](https://maps.app.goo.gl/3iMfxSzBAYaefXT37))
+
+# Friday, March 27, 2026
+
+6 pm - 9 pm ET
+
+[Biederman's Deli](https://www.biedermans.com/) \
+83 Main Street \
+Plymouth, NH 03301 ([map](https://maps.app.goo.gl/Jt4WxFVbJfPR34Dr6))
+
+# Friday, April 24, 2026
+
+6 pm - 9 pm ET
+
+[Biederman's Deli](https://www.biedermans.com/) \
+83 Main Street \
+Plymouth, NH 03301 ([map](https://maps.app.goo.gl/Jt4WxFVbJfPR34Dr6))
+
+# Friday, May 29, 2026
+
+6 pm - 9 pm ET
+
+[Biederman's Deli](https://www.biedermans.com/) \
+83 Main Street \
+Plymouth, NH 03301 ([map](https://maps.app.goo.gl/Jt4WxFVbJfPR34Dr6))
+
+# Friday, May 29, 2026
+
+6 pm - 9 pm ET
+
+[Biederman's Deli](https://www.biedermans.com/) \
+83 Main Street \
+Plymouth, NH 03301 ([map](https://maps.app.goo.gl/Jt4WxFVbJfPR34Dr6))
+
+# Friday, June 26, 2026
+
+6 pm - 9 pm ET
+
+[Biederman's Deli](https://www.biedermans.com/) \
+83 Main Street \
+Plymouth, NH 03301 ([map](https://maps.app.goo.gl/Jt4WxFVbJfPR34Dr6))
+
+# Friday, July 24, 2026
+
+6 pm - 9 pm ET
+
+[Biederman's Deli](https://www.biedermans.com/) \
+83 Main Street \
+Plymouth, NH 03301 ([map](https://maps.app.goo.gl/Jt4WxFVbJfPR34Dr6))
+
+# Friday, July 24, 2026
+
+6 pm - 9 pm ET
+
+[Biederman's Deli](https://www.biedermans.com/) \
+83 Main Street \
+Plymouth, NH 03301 ([map](https://maps.app.goo.gl/Jt4WxFVbJfPR34Dr6))
+
+# Friday, August 28, 2026
+
+6 pm - 9 pm ET
+
+[Biederman's Deli](https://www.biedermans.com/) \
+83 Main Street \
+Plymouth, NH 03301 ([map](https://maps.app.goo.gl/Jt4WxFVbJfPR34Dr6))
+
+# Friday, September 25, 2026
+
+6 pm - 9 pm ET
+
+[Biederman's Deli](https://www.biedermans.com/) \
+83 Main Street \
+Plymouth, NH 03301 ([map](https://maps.app.goo.gl/Jt4WxFVbJfPR34Dr6))
+
+# Friday, October 16, 2026
+
+6 pm - 9 pm ET
+
+[Biederman's Deli](https://www.biedermans.com/) \
+83 Main Street \
+Plymouth, NH 03301 ([map](https://maps.app.goo.gl/Jt4WxFVbJfPR34Dr6))
+
+# Friday, November 27, 2026
+
+6 pm - 9 pm ET
+
+[Biederman's Deli](https://www.biedermans.com/) \
+83 Main Street \
+Plymouth, NH 03301 ([map](https://maps.app.goo.gl/Jt4WxFVbJfPR34Dr6))
+
+# Friday, December 18, 2026
+
+6 pm - 9 pm ET
+
+[Biederman's Deli](https://www.biedermans.com/) \
+83 Main Street \
+Plymouth, NH 03301 ([map](https://maps.app.goo.gl/Jt4WxFVbJfPR34Dr6))
 
 </div>
