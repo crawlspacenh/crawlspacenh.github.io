@@ -1,7 +1,7 @@
 +++
 title = 'Posters'
 date = 2024-08-13T23:03:12-04:00
-lastmod = 2025-11-15T08:49:55-05:00
+lastmod = 2025-12-03T15:42:25-08:00
 draft = false
 +++
 <!-- markdownlint-disable MD025 MD033 MD045 -->
@@ -52,6 +52,11 @@ draft = false
 </style>
 
 <div class="poster-grid">
+  <div class="poster-item">
+    <a href="/images/posters/2025-12-12.jpg" target="_blank">
+      <img src="/images/posters/2025-12-12.jpg" alt="Poster for 2025-12-12 show" />
+    </a>
+  </div>
   <div class="poster-item">
     <a href="/images/posters/2025-11-21.jpg" target="_blank">
       <img src="/images/posters/2025-11-21.jpg" alt="Poster for 2025-11-21 show" />
