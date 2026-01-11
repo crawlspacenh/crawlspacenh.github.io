@@ -45,6 +45,16 @@ draft = false
 83 Main Street \
 Plymouth, NH 03301 ([map](https://maps.app.goo.gl/Jt4WxFVbJfPR34Dr6))
 
+# Sunday, February 1, 2026
+
+11 am - 12 pm ET (Doors: 10:30 am ET)
+
+[Rock &amp; Roll Playhouse: Music of the Grateful Dead](https://www.ccanh.com/show/25000585) \
+Capitol Center for the Arts \
+Bank of New Hampshire Stage \
+16 S. Main Street \
+Concord, NH 03301 ([map](https://maps.app.goo.gl/UsCRTuYicBsv5tyn9))
+
 # Saturday, February 7, 2026
 
 8 pm - 12 am ET
