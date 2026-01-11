@@ -37,22 +37,6 @@ draft = false
 
 <div class="live-events">
 
-# Friday, January 2, 2026
-
-8 pm - 12 am ET
-
-[Penuche's Ale House](https://www.yelp.com/biz/penuches-ale-house-concord) \
-16 Bicentennial Square \
-Concord, NH 03301 ([map](https://kagi.com/maps/infobox?q=Penuche's%20Ale%20House&ll=43.204369,-71.536237&id=350127166#17.5/43.204369/-71.536237))
-
-# Saturday, January 3, 2026
-
-8 pm - 12 am ET
-
-[The Grateful Skier](https://www.gratefulskier.com/) \
-11 Pollard Road \
-Lincoln, NH 03251 ([map](https://maps.app.goo.gl/3iMfxSzBAYaefXT37))
-
 # Friday, January 30, 2026
 
 6 pm - 9 pm ET
