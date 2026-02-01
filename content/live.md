@@ -37,14 +37,6 @@ draft = false
 
 <div class="live-events">
 
-# Friday, January 30, 2026
-
-6 pm - 9 pm ET
-
-[Biederman's Deli](https://www.biedermans.com/) \
-83 Main Street \
-Plymouth, NH 03301 ([map](https://maps.app.goo.gl/Jt4WxFVbJfPR34Dr6))
-
 # Sunday, February 1, 2026
 
 11 am - 12 pm ET (Doors: 10:30 am ET)
