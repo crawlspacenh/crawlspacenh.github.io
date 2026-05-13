@@ -37,55 +37,6 @@ draft = false
 
 <div class="live-events">
 
-# Sunday, February 1, 2026
-
-11 am - 12 pm ET (Doors: 10:30 am ET)
-
-[Rock &amp; Roll Playhouse: Music of the Grateful Dead](https://www.ccanh.com/show/25000585) \
-Capitol Center for the Arts \
-Bank of New Hampshire Stage \
-16 S. Main Street \
-Concord, NH 03301 ([map](https://maps.app.goo.gl/UsCRTuYicBsv5tyn9))
-
-# Saturday, February 7, 2026
-
-8 pm - 12 am ET
-
-[The Grateful Skier](https://www.gratefulskier.com/) \
-11 Pollard Road \
-Lincoln, NH 03251 ([map](https://maps.app.goo.gl/3iMfxSzBAYaefXT37))
-
-# Friday, February 27, 2026
-
-6 pm - 9 pm ET
-
-[Biederman's Deli](https://www.biedermans.com/) \
-83 Main Street \
-Plymouth, NH 03301 ([map](https://maps.app.goo.gl/Jt4WxFVbJfPR34Dr6))
-
-# Saturday, March 14, 2026
-
-8 pm - 12 am ET
-
-[The Grateful Skier](https://www.gratefulskier.com/) \
-11 Pollard Road \
-Lincoln, NH 03251 ([map](https://maps.app.goo.gl/3iMfxSzBAYaefXT37))
-
-# Friday, March 27, 2026
-
-6 pm - 9 pm ET
-
-[Biederman's Deli](https://www.biedermans.com/) \
-83 Main Street \
-Plymouth, NH 03301 ([map](https://maps.app.goo.gl/Jt4WxFVbJfPR34Dr6))
-
-# Friday, April 24, 2026
-
-6 pm - 9 pm ET
-
-[Biederman's Deli](https://www.biedermans.com/) \
-83 Main Street \
-Plymouth, NH 03301 ([map](https://maps.app.goo.gl/Jt4WxFVbJfPR34Dr6))
 
 # Friday, May 29, 2026
 
