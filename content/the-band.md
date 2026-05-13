@@ -80,13 +80,5 @@ td.right {
       <b>Bobby Decorte</b><br />Bass Guitars<br />Vocals
     </td>
   </tr>
-  <tr>
-    <td class="right">
-      <b>Ian Chesal</b><br />Guitars
-    </td>
-    <td>
-      <img src="/images/headshots/ian-001.jpg" width=200 alt="Ian Chesal" />
-    </td>
-  </tr>
 </table>
 </div>
