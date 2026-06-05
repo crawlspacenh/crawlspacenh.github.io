@@ -50,7 +50,7 @@ Plymouth, NH 03301 ([map](https://maps.app.goo.gl/Jt4WxFVbJfPR34Dr6))
 
 9 pm - 12 am ET
 
-[Penuche's Ale House](https://www.facebook.com/penuches.concord/#)/) \
+[Penuche's Ale House](https://www.facebook.com/penuches.concord/#) \
 16 Bicentennial Square \
 Concord, NH 03301 ([map](https://maps.app.goo.gl/9pqkty3Tw2PWFUr49))
 
