@@ -52,7 +52,7 @@ Plymouth, NH 03301 ([map](https://maps.app.goo.gl/Jt4WxFVbJfPR34Dr6))
 
 [Penuche's Ale House](https://www.facebook.com/penuches.concord/#) \
 16 Bicentennial Square \
-Concord, NH 03301 ([map](https://maps.app.goo.gl/9pqkty3Tw2PWFUr49))
+Concord, NH 03301 ([map](https://www.google.com/maps/place/Penuche's+Ale+House/@43.2042847,-71.5388603,17z/data=!4m14!1m7!3m6!1s0x89e26a8d82aabf07:0xabcca13869141a2b!2sPenuche's+Ale+House!8m2!3d43.2042808!4d-71.5362854!16s%2Fm%2F0k5sh11!3m5!1s0x89e26a8d82aabf07:0xabcca13869141a2b!8m2!3d43.2042808!4d-71.5362854!16s%2Fm%2F0k5sh11?authuser=0&entry=ttu&g_ep=EgoyMDI2MDYwMS4wIKXMDSoASAFQAw%3D%3D))
 
 
 # Friday, June 26, 2026
