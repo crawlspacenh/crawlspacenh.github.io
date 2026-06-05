@@ -46,13 +46,6 @@ draft = false
 83 Main Street \
 Plymouth, NH 03301 ([map](https://maps.app.goo.gl/Jt4WxFVbJfPR34Dr6))
 
-# Friday, May 29, 2026
-
-6 pm - 9 pm ET
-
-[Biederman's Deli](https://www.biedermans.com/) \
-83 Main Street \
-Plymouth, NH 03301 ([map](https://maps.app.goo.gl/Jt4WxFVbJfPR34Dr6))
 
 # Friday, June 26, 2026
 
