@@ -55,6 +55,15 @@ Plymouth, NH 03301 ([map](https://maps.app.goo.gl/Jt4WxFVbJfPR34Dr6))
 Concord, NH 03301 ([map](https://www.google.com/maps/place/Penuche's+Ale+House/@43.2042847,-71.5388603,17z/data=!4m14!1m7!3m6!1s0x89e26a8d82aabf07:0xabcca13869141a2b!2sPenuche's+Ale+House!8m2!3d43.2042808!4d-71.5362854!16s%2Fm%2F0k5sh11!3m5!1s0x89e26a8d82aabf07:0xabcca13869141a2b!8m2!3d43.2042808!4d-71.5362854!16s%2Fm%2F0k5sh11?authuser=0&entry=ttu&g_ep=EgoyMDI2MDYwMS4wIKXMDSoASAFQAw%3D%3D))
 
 
+# Friday, June 5, 2026
+
+9 pm - 12 am ET
+
+[Penuche's Ale House](https://[www.biedermans.com](https://www.facebook.com/ConcordNHMusicScene/posts/penuches-ale-house-concord-nh/1411300754358353/) \
+16 Bicentennial Square \
+Concord, NH 03301 ([map](https://[https://www.google.com/maps/place/Penuche's+Ale+House/@43.2042808,-71.5362854,17z/data=!3m1!4b1!4m6!3m5!1s0x89e26a8d82aabf07:0xabcca13869141a2b!8m2!3d43.2042808!4d-71.5362854!16s%2Fm%2F0k5sh11?entry=ttu&g_ep=EgoyMDI2MDYwMS4wIKXMDSoASAFQAw%3D%3D]
+
+
 # Friday, June 26, 2026
 
 6 pm - 9 pm ET
