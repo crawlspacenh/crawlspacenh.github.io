@@ -47,13 +47,13 @@ draft = false
 231 S Main Street \
 Concord, NH 03301 ([map](https://https://maps.app.goo.gl/ZumFMie1GaUm37VJ9))
 
-# Friday, July 24, 2026
+# Wednesday, July 15, 2026
 
-6 pm - 9 pm ET
+6:30 pm - 8 pm ET
 
-[Biederman's Deli](https://www.biedermans.com/) \
-83 Main Street \
-Plymouth, NH 03264 ([map](https://maps.app.goo.gl/Jt4WxFVbJfPR34Dr6))
+[Canal Street Riverfront Park](https://https://www.concordnh.gov/1964/Canal-Street-Riverfront-Park/) \
+11 Canal Street \
+Penacook, NH 03303 ([map](https://maps.app.goo.gl/7uhx4DKSs8vnkKoeA))
 
 # Friday, July 24, 2026
 
