@@ -39,7 +39,7 @@ draft = false
 
 
 
-# Friday, Juuly 10, 2026
+# Friday, July 10, 2026
 
 6 pm - 9 pm ET
 
