@@ -43,9 +43,9 @@ draft = false
 
 6 pm - 9 pm ET
 
-[Feathered Friend Brewery](https://www.featherdfriendbrewing.com/) \
+[Feathered Friend Brewery](https://www.featheredfriendbrewing.com/) \
 231 S Main Street \
-Concord, NH 03301 ([map](https://https://maps.app.goo.gl/ZumFMie1GaUm37VJ9))
+Concord, NH 03301 ([map](https://maps.app.goo.gl/ZumFMie1GaUm37VJ9))
 
 # Wednesday, July 15, 2026
 
