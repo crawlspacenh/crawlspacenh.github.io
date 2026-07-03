@@ -51,7 +51,7 @@ Concord, NH 03301 ([map](https://https://maps.app.goo.gl/ZumFMie1GaUm37VJ9))
 
 6:30 pm - 8 pm ET
 
-[Canal Street Riverfront Park](https://https://www.concordnh.gov/1964/Canal-Street-Riverfront-Park/) \
+[Canal Street Riverfront Park](https://www.concordnh.gov/1964/Canal-Street-Riverfront-Park/) \
 11 Canal Street \
 Penacook, NH 03303 ([map](https://maps.app.goo.gl/7uhx4DKSs8vnkKoeA))
 
