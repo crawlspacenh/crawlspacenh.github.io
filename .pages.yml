@@ -1,5 +1,6 @@
 # Pages CMS admin config: https://pagescms.org/docs/configuration/
 # Removing this file disables the admin; the site keeps working.
+# content.merge keeps front-matter keys that aren't in a schema (date, layout, ...).
 
 media:
   input: assets/images
@@ -8,6 +9,8 @@ media:
 settings:
   commit:
     identity: user
+  content:
+    merge: true
 
 content:
   - name: gigs
