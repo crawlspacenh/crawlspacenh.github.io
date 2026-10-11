@@ -40,7 +40,7 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 - Markdown: Follow standard Markdown conventions with HTML when required
 
 ## Content Organization
-- Pages: Live (upcoming gigs), Past Shows, Posters, The Band, Videos, Merch, Contact, About
+- Pages: Live (upcoming gigs), Past Shows, Posters, The Band, Videos, Merch, Contact
 - Upcoming vs. past is decided at build time by date (America/New_York) with a JS backstop
 
 ## Special Considerations

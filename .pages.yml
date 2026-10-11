@@ -151,16 +151,6 @@ content:
               path: assets/images/merch
           - { name: url, label: Store link, type: string, required: true }
 
-  - name: about
-    label: About page
-    type: file
-    path: content/about.md
-    format: toml-frontmatter
-    fields:
-      - { name: title, label: Title, type: string }
-      - { name: description, label: Search description, type: text }
-      - { name: body, label: Text, type: rich-text }
-
   - name: contact
     label: Contact page
     type: file

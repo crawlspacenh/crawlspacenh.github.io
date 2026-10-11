@@ -28,8 +28,8 @@ It shows up on the gig and on the Posters page.
 ## Remove a bad upload
 Pages CMS → **Media** → find the file → delete it, then save any change.
 
-## Edit the About or Contact page
-Open **About page** or **Contact page** in the sidebar, edit the text, and **Save**.
+## Edit the Contact page
+Open **Contact page** in the sidebar, edit the text, and **Save**.
 The booking form itself can't be changed there.
 
 ## Edit the band, videos, merch, or site settings
