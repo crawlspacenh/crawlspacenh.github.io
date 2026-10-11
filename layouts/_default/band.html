@@ -1,0 +1,14 @@
+{{ define "main" }}
+{{ partial "bio" . }}
+<div class="split-bio">
+  <div class="band-grid">
+    {{ range hugo.Data.band.members }}
+    {{ $m := . }}
+    <figure class="band-member">
+      {{ with $m.photo }}{{ partial "picture.html" (dict "src" . "alt" $m.name "width" 200) }}{{ end }}
+      <figcaption><b>{{ $m.name }}</b>{{ range $m.instruments }}<br>{{ . }}{{ end }}</figcaption>
+    </figure>
+    {{ end }}
+  </div>
+</div>
+{{ end }}

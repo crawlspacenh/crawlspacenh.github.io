@@ -1,0 +1,14 @@
+{{ define "main" }}
+{{ partial "bio" . }}
+<div class="split-bio">
+  {{ $year := "" }}
+  {{ range (partial "func/gigs.html" .).past }}
+    {{ $y := .Date.Format "2006" }}
+    {{ if ne $y $year }}<h2 class="gig-year">{{ $y }}</h2>{{ $year = $y }}{{ end }}
+    {{ partial "gig.html" (dict "page" . "show_poster" false) }}
+  {{ else }}
+    <p>No past shows yet.</p>
+  {{ end }}
+  <p class="gig-more"><a href="/live.html">&laquo; Upcoming shows</a></p>
+</div>
+{{ end }}

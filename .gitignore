@@ -18,3 +18,5 @@ hugo.linux
 # AI Shit
 /.claude
 /.serena
+
+__pycache__/

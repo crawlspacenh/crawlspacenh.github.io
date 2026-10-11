@@ -1,0 +1,14 @@
+<div class="split-lists">
+  {{ range hugo.Data.site.link_groups }}
+    {{ if .links }}
+    <div class="split-list">
+      <h3>{{ .heading }}</h3>
+      <ul>
+        {{ range .links }}
+        <li><a href="{{ .url | safeURL }}" title="{{ .text }}"{{ if .new_tab }} target="_blank" rel="noopener"{{ end }}>{{ .text }}</a></li>
+        {{ end }}
+      </ul>
+    </div>
+    {{ end }}
+  {{ end }}
+</div>

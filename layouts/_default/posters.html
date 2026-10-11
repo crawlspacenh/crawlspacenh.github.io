@@ -1,0 +1,38 @@
+{{ define "main" }}
+{{ partial "bio" . }}
+{{/* Map each poster path ("images/posters/x.jpg", lowercased) to the gig that uses it.
+     Capture the gig in $gig: inside `with`, the dot is the poster string. */}}
+{{ $gigByPoster := dict }}
+{{ range where site.RegularPages "Section" "gigs" }}
+  {{ $gig := . }}
+  {{ with .Params.poster }}
+    {{ $gigByPoster = merge $gigByPoster (dict (lower (strings.TrimPrefix "/" .)) $gig) }}
+  {{ end }}
+{{ end }}
+{{ $items := slice }}
+{{ range resources.Match "images/posters/*" }}
+  {{ if in (slice "jpeg" "png" "gif" "webp") .MediaType.SubType }}
+  {{ $key := lower (strings.TrimPrefix "/" .Name) }}
+  {{ $file := path.Base .Name }}
+  {{ $gig := index $gigByPoster $key }}
+  {{ if $gig }}
+    {{ $v := partial "func/venue.html" $gig }}
+    {{ $date := $gig.Date.Format "2006-01-02" }}
+    {{ $items = $items | append (dict "sort" $date "src" (printf "/%s" (strings.TrimPrefix "/" .Name)) "alt" (printf "Poster for %s, %s" $v.name $date) "caption" (printf "%s · %s" ($gig.Date.Format "Jan 2, 2006") $v.name)) }}
+  {{ else }}
+    {{ $base := path.BaseName $file }}
+    {{ $items = $items | append (dict "sort" $base "src" (printf "/%s" (strings.TrimPrefix "/" .Name)) "alt" (printf "Crawlspace poster, %s" $base) "caption" "") }}
+  {{ end }}
+  {{ end }}
+{{ end }}
+<div class="split-bio">
+  <div class="poster-grid">
+    {{ range sort $items "sort" "desc" }}
+    <figure class="poster-item">
+      {{ partial "picture.html" (dict "src" .src "alt" .alt "width" 240 "href" "original") }}
+      {{ with .caption }}<figcaption class="poster-caption">{{ . }}</figcaption>{{ end }}
+    </figure>
+    {{ end }}
+  </div>
+</div>
+{{ end }}

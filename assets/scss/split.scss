@@ -1,0 +1,44 @@
+//-------------------------------------------------------------------------------
+// Variables
+//-------------------------------------------------------------------------------
+
+// Colors
+$color-background   : #061C30;
+$color-text         : #848d96;
+$color-link         : #848d96;
+$color-link-hover   : #CA486d;
+$color-maverick     : #47bec7;
+$color-tagline      : #CCCCCC;
+
+// Breakpoints
+$bp-smallish        : 1200px;
+$bp-tablet          : 800px;
+$bp-mobile          : 500px;
+
+// Image: background comes from data/site.yml (editable in Pages CMS).
+{{- $bg := "" -}}
+{{- with hugo.Data.site.background_image -}}
+  {{- with resources.Get (strings.TrimPrefix "/" .) -}}
+    {{- if in (slice "jpeg" "png" "gif" "webp") .MediaType.SubType -}}
+      {{- $src := . -}}
+      {{- if ne .MediaType.SubType "gif" -}}{{- $src = .Filter images.AutoOrient -}}{{- end -}}
+      {{- $bg = ($src.Resize "1920x webp q80").RelPermalink -}}
+    {{- else -}}
+      {{- warnf "split.scss: background image %q is not a JPG/PNG/GIF/WebP image; skipping" .Name -}}
+    {{- end -}}
+  {{- end -}}
+{{- end }}
+$image-background   : {{ if and site.Params.visual.image.enable $bg }}url('{{ $bg }}'){{ else }}none{{ end }};
+$image-position     : {{ site.Params.visual.image.position | default "center center" }};
+
+// Animation
+$animation-name     : fadein;
+$animation-duration : 2s;
+
+//-------------------------------------------------------------------------------
+// Imports
+//-------------------------------------------------------------------------------
+
+@import "reset";
+@import "fonts";
+@import "content";

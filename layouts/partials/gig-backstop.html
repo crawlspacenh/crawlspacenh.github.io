@@ -1,0 +1,26 @@
+{{/*
+  Backstop for a missed or late nightly build: hide gigs dated before the
+  visitor's local date. A [data-gig-list] container may set data-limit to cap
+  visible gigs. If nothing is left, show its [data-gig-empty] element, or hide
+  the whole container when it has none.
+*/}}
+<script>
+(function () {
+  document.documentElement.classList.add("js");
+  var d = new Date();
+  var today = d.getFullYear() + "-" + String(d.getMonth() + 1).padStart(2, "0") + "-" + String(d.getDate()).padStart(2, "0");
+  document.querySelectorAll("[data-gig-list]").forEach(function (list) {
+    var limit = parseInt(list.getAttribute("data-limit") || "0", 10);
+    var shown = 0;
+    list.querySelectorAll("[data-date]").forEach(function (gig) {
+      var keep = gig.getAttribute("data-date") >= today && (!limit || shown < limit);
+      gig.hidden = !keep;
+      if (keep) shown++;
+    });
+    if (shown === 0) {
+      var empty = list.querySelector("[data-gig-empty]");
+      if (empty) { empty.hidden = false; } else { list.hidden = true; }
+    }
+  });
+})();
+</script>

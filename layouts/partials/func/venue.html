@@ -1,0 +1,13 @@
+{{/*
+  Input: a gig page. Returns its venue's data map from data/venues/<slug>.yml.
+  Accepts a bare slug or a path ("data/venues/x.yml"), since Pages CMS can store either.
+  A missing venue must not fail the build: warn and return the slug as the name.
+*/}}
+{{ $slug := path.Base (.Params.venue | default "") | strings.TrimSuffix ".yml" | strings.TrimSuffix ".yaml" }}
+{{ $venue := false }}
+{{ with hugo.Data.venues }}{{ $venue = index . $slug }}{{ end }}
+{{ if not $venue }}
+  {{ warnf "Gig %q references missing venue %q" .File.Path $slug }}
+  {{ $venue = dict "name" ($slug | default "Venue TBA") }}
+{{ end }}
+{{ return $venue }}

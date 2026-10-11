@@ -21,7 +21,7 @@ Before pushing changes, you can run the same tests locally to catch issues early
 ### Prerequisites
 
 **Required:**
-- [Hugo](https://gohugo.io/installation/) (Extended version 0.151.2 or compatible)
+- [Hugo](https://gohugo.io/installation/) (Extended version 0.167.0, pinned in `.tool-versions`)
 
 **Optional (but recommended):**
 - [htmltest](https://github.com/wjdp/htmltest) - For checking broken links
@@ -100,7 +100,7 @@ git push origin your-branch
 
 **Build failures:**
 - Check for missing images referenced in content
-- Verify theme files are present (submodules)
+- Verify theme files are present in themes/hugo-split-theme/
 - Review Hugo error messages for specific issues
 
 **Broken links:**

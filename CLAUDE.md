@@ -7,19 +7,21 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 - It is hosted on GitHub Pages with a custom domain
 - The base domain for the site is: `crawlspacenh.com` (defined in the CNAME file)
 - The site contains content for Crawlspace, a jam band based in New Hampshire
-- The band consists of five members playing various instruments
-- The site uses the `hugo-split-theme` with custom modifications
+- The band's current lineup is in `data/band.yml` (editable in Pages CMS)
+- The site uses the `hugo-split-theme`, vendored in `themes/` and never edited; it is overridden from root `layouts/` and `assets/`
 
 ## Site Structure
-- Content files are stored in `/content/` directory using Markdown format
-- Images are stored in `/static/images/` with subdirectories for headshots, posters, etc.
-- Configuration is maintained in `hugo.toml` using TOML syntax
-- The `CNAME` file in the root directory configures the custom domain for GitHub Pages
+- Content is edited by the band through Pages CMS (`.pages.yml`). See `docs/editing-the-site.md`.
+- Gigs: one front-matter-only file per show in `content/gigs/`; venues in `data/venues/*.yml`
+- Band, videos, merch, site settings (tagline, background, nav links): `data/*.yml`
+- CMS-managed images: `assets/images/{posters,band,site,merch}/`, referenced as `/images/...`
+- Templates: root `layouts/` and `assets/` override the vendored `themes/hugo-split-theme/` (never edit the theme)
+- Configuration is maintained in `hugo.toml`
 
 ## Commands
 - Build (local development): `hugo server`
 - Build (production): `hugo --minify`
-- Deploy: Automatic when pushed to main branch
+- Deploy: automatic on push to main, plus a nightly rebuild that moves past gigs to Past Shows
 
 ## Deployment
 - The site is automatically built and deployed to GitHub Pages when changes are pushed to the main branch
@@ -31,17 +33,15 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 - Content format: Use Markdown for all content files
 - HTML: Use HTML within Markdown when needed for specific formatting (tables, styling)
 - Front matter: Use TOML format for page front matter (+++...+++)
-- Links: Use relative URLs when linking to internal content
+- Links: Use root-relative URLs (e.g. `/live.html`) for internal content
 - Naming conventions: Use kebab-case for all file names
 - Images: Include alt text for all images and appropriate ARIA attributes for HTML
-- CSS: Custom styles should be included within content files when needed
+- CSS: Put custom styles in `assets/css/site.css` (theme colors/fonts live in `assets/scss/split.scss`); don't add inline `<style>` to content files
 - Markdown: Follow standard Markdown conventions with HTML when required
 
 ## Content Organization
-- Main sections: About, The Band, Live, Videos, Posters
-- Band member information: Maintained in `the-band.md` with tabular layout
-- Live performances: Listed in `live.md` with chronological order
-- Homepage: Main content in `_index.md`
+- Pages: Live (upcoming gigs), Past Shows, Posters, The Band, Videos, Merch, Contact
+- Upcoming vs. past is decided at build time by date (America/New_York) with a JS backstop
 
 ## Special Considerations
 - Maintain responsive design for optimal viewing on all devices

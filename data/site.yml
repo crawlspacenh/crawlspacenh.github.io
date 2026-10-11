@@ -1,0 +1,32 @@
+tagline: "The best little jam band in New Hampshire"
+background_image: "/images/site/background.jpg"
+share_image: ""
+link_groups:
+  - heading: "About"
+    links:
+      - text: "The Band"
+        url: "/the-band.html"
+        new_tab: false
+      - text: "Live"
+        url: "/live.html"
+        new_tab: false
+      - text: "Videos"
+        url: "/videos.html"
+        new_tab: false
+      - text: "Posters"
+        url: "/posters.html"
+        new_tab: false
+      - text: "Merch"
+        url: "/merch.html"
+        new_tab: false
+  - heading: "Social"
+    links:
+      - text: "Bookings"
+        url: "/contact.html"
+        new_tab: false
+      - text: "Email"
+        url: "mailto:fans@crawlspacenh.com"
+        new_tab: false
+      - text: "Facebook"
+        url: "https://www.facebook.com/p/Crawlspace-NH-100064934713606/"
+        new_tab: true

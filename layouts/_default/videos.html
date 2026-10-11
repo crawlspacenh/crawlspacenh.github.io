@@ -1,0 +1,34 @@
+{{ define "main" }}
+{{ partial "bio" . }}
+{{ $pc := site.Config.Privacy.YouTube }}
+{{ $host := cond $pc.PrivacyEnhanced "www.youtube-nocookie.com" "www.youtube.com" }}
+<div class="split-bio">
+  {{ range hugo.Data.videos.videos }}
+    {{ $u := urls.Parse .youtube_url }}
+    {{ $q := $u.Query }}
+    {{ $embed := "" }}
+    {{ with $q.Get "list" }}
+      {{ $embed = printf "embed/videoseries?list=%s" . }}
+    {{ else }}
+      {{ with $q.Get "v" }}
+        {{ $embed = printf "embed/%s" . }}
+      {{ else }}
+        {{ if eq $u.Host "youtu.be" }}{{ $embed = printf "embed/%s" (strings.TrimPrefix "/" $u.Path) }}{{ end }}
+      {{ end }}
+    {{ end }}
+    <section class="video-item">
+      <h2>{{ .title }}</h2>
+      {{ with .date }}<p class="video-date">{{ time.Format "January 2, 2006" . }}</p>{{ end }}
+      {{ if and $embed (not $pc.Disable) }}
+      <div class="video-embed">
+        <iframe src="https://{{ $host }}/{{ $embed | safeURL }}" title="{{ .title }}" allowfullscreen loading="lazy"></iframe>
+      </div>
+      {{ else }}
+        {{ warnf "videos.yml: can't embed %q" .youtube_url }}
+        <p><a href="{{ .youtube_url }}" target="_blank" rel="noopener">Watch on YouTube</a></p>
+      {{ end }}
+      {{ with .description }}<p>{{ . }}</p>{{ end }}
+    </section>
+  {{ end }}
+</div>
+{{ end }}

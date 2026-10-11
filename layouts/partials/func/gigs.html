@@ -1,0 +1,16 @@
+{{/*
+  Returns dict "upcoming" (ascending by date) and "past" (descending).
+  A gig is upcoming through the whole day of the show: compare calendar dates
+  in the site time zone, never times of day.
+*/}}
+{{ $today := now.Format "2006-01-02" }}
+{{ $upcoming := slice }}
+{{ $past := slice }}
+{{ range where site.RegularPages "Section" "gigs" }}
+  {{ if ge (.Date.Format "2006-01-02") $today }}
+    {{ $upcoming = $upcoming | append . }}
+  {{ else }}
+    {{ $past = $past | append . }}
+  {{ end }}
+{{ end }}
+{{ return dict "upcoming" (sort $upcoming "Date" "asc") "past" (sort $past "Date" "desc") }}
