@@ -1,0 +1,202 @@
+# Pages CMS admin config: https://pagescms.org/docs/configuration/
+# Removing this file disables the admin; the site keeps working.
+
+media:
+  input: assets/images
+  output: /images
+
+settings:
+  commit:
+    identity: user
+
+content:
+  - name: gigs
+    label: Gigs
+    type: collection
+    path: content/gigs
+    format: toml-frontmatter
+    exclude: ["_index.md"]
+    filename: "{fields.date}-{fields.venue}-{fields.start}.md"
+    view:
+      fields: [date, venue, title, cancelled]
+      primary: date
+      sort: [date]
+      default:
+        sort: date
+        order: desc
+    fields:
+      - name: date
+        label: Date
+        type: date
+        required: true
+      - name: start
+        label: Start time
+        type: string
+        required: true
+        default: "6 pm"
+        description: 'For example "6 pm" or "6:30 pm". "ET" is added automatically.'
+      - name: end
+        label: End time
+        type: string
+      - name: venue
+        label: Venue
+        type: reference
+        required: true
+        options:
+          content: venues
+          value: "{name}"
+          label: "{primary}"
+      - name: title
+        label: Event name (optional)
+        type: string
+        description: 'Only for named events, e.g. "Rock & Roll Playhouse".'
+      - name: poster
+        label: Poster
+        type: image
+        options:
+          path: assets/images/posters
+      - name: ticket_url
+        label: Ticket link
+        type: string
+      - name: notes
+        label: Notes
+        type: text
+        description: 'Short line such as "All ages".'
+      - name: cancelled
+        label: Cancelled
+        type: boolean
+        default: false
+
+  - name: venues
+    label: Venues
+    type: collection
+    path: data/venues
+    format: yaml
+    filename: "{fields.name}.yml"
+    view:
+      fields: [name, city]
+      primary: name
+      sort: [name]
+      default:
+        sort: name
+        order: asc
+    fields:
+      - { name: name, label: Venue name, type: string, required: true }
+      - { name: url, label: Website, type: string }
+      - { name: street, label: Street address, type: string }
+      - { name: city, label: City, type: string }
+      - { name: state, label: State, type: string, default: "NH" }
+      - { name: zip, label: ZIP code, type: string }
+      - { name: map_url, label: Google Maps link, type: string }
+
+  - name: band
+    label: Band
+    type: file
+    path: data/band.yml
+    format: yaml
+    fields:
+      - name: members
+        label: Members (in display order)
+        type: object
+        list: true
+        fields:
+          - { name: name, label: Name, type: string, required: true }
+          - { name: instruments, label: Instruments, type: string, list: true }
+          - name: photo
+            label: Photo
+            type: image
+            options:
+              path: assets/images/band
+
+  - name: videos
+    label: Videos
+    type: file
+    path: data/videos.yml
+    format: yaml
+    fields:
+      - name: videos
+        label: Videos (in display order)
+        type: object
+        list: true
+        fields:
+          - { name: title, label: Title, type: string, required: true }
+          - { name: date, label: Date, type: date }
+          - { name: description, label: Description, type: text }
+          - name: youtube_url
+            label: YouTube link
+            type: string
+            required: true
+            description: "A video or playlist link from YouTube's Share button."
+
+  - name: merch
+    label: Merch
+    type: file
+    path: data/merch.yml
+    format: yaml
+    fields:
+      - name: items
+        label: Items
+        type: object
+        list: true
+        fields:
+          - { name: title, label: Title, type: string, required: true }
+          - name: image
+            label: Image
+            type: image
+            options:
+              path: assets/images/merch
+          - { name: url, label: Store link, type: string, required: true }
+
+  - name: about
+    label: About page
+    type: file
+    path: content/about.md
+    format: toml-frontmatter
+    fields:
+      - { name: title, label: Title, type: string }
+      - { name: description, label: Search description, type: text }
+      - { name: body, label: Text, type: rich-text }
+
+  - name: contact
+    label: Contact page
+    type: file
+    path: content/contact.md
+    format: toml-frontmatter
+    fields:
+      - { name: title, label: Title, type: string }
+      - { name: description, label: Search description, type: text }
+      - { name: layout, type: string, hidden: true, default: contact }
+      - { name: body, label: Text above the form, type: rich-text }
+      - { name: after_form, label: Text below the form, type: rich-text }
+
+  - name: site
+    label: Site settings
+    type: file
+    path: data/site.yml
+    format: yaml
+    fields:
+      - { name: tagline, label: Tagline, type: string }
+      - name: background_image
+        label: Background image
+        type: image
+        options:
+          path: assets/images/site
+      - name: share_image
+        label: Share image (shown when the site is linked on social media)
+        type: image
+        options:
+          path: assets/images/site
+      - name: link_groups
+        label: Navigation
+        type: object
+        list: true
+        fields:
+          - { name: heading, label: Heading, type: string }
+          - name: links
+            label: Links
+            type: object
+            list: true
+            fields:
+              - { name: text, label: Text, type: string }
+              - { name: url, label: URL, type: string, description: 'Site pages start with "/", e.g. "/live.html".' }
+              - { name: new_tab, label: Open in new tab, type: boolean }
