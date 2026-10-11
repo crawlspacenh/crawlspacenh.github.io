@@ -1,0 +1,8 @@
+{{ define "main" }}
+<div class="split-bio">
+  {{ .Content }}
+  <h2>Booking Inquiry Form</h2>
+  {{ partial "contact-form.html" . }}
+  {{ with .Params.after_form }}{{ . | markdownify }}{{ end }}
+</div>
+{{ end }}
