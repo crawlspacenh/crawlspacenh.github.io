@@ -100,7 +100,7 @@ git push origin your-branch
 
 **Build failures:**
 - Check for missing images referenced in content
-- Verify theme files are present (submodules)
+- Verify theme files are present in themes/hugo-split-theme/
 - Review Hugo error messages for specific issues
 
 **Broken links:**

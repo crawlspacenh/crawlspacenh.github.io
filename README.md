@@ -2,6 +2,12 @@
 
 [https://crawlspacenh.com]
 
+## Editing the site
+
+The band edits content through [Pages CMS](https://app.pagescms.org). See
+[docs/editing-the-site.md](docs/editing-the-site.md). Gigs live in `content/gigs/`, everything
+else editable in `data/`, and images in `assets/images/`.
+
 ## Local Development
 
 This site is built using [Hugo](https://gohugo.io/), a fast and modern static
@@ -20,30 +26,22 @@ site generator.
    cd crawlspace-website
    ```
 
-2. Initialize and update the git submodules (for themes):
-   ```
-   git submodule init
-   git submodule update
-   ```
+   The theme is vendored in `themes/hugo-split-theme/`, so a plain `git clone`
+   is all you need.
 
-   Or clone with submodules in one command:
-   ```
-   git clone --recurse-submodules https://github.com/your-username/crawlspace-website.git
-   ```
-
-3. Run the Hugo development server:
+2. Run the Hugo development server:
    ```
    hugo server
    ```
    This will start a local development server at [http://localhost:1313/] with
    live reload enabled.
 
-4. To see draft content during development:
+3. To see draft content during development:
    ```
    hugo server -D
    ```
 
-5. To build the site for production:
+4. To build the site for production:
    ```
    hugo --minify
    ```
@@ -57,7 +55,7 @@ are located in the `/themes/hugo-split-theme/` directory.
 ### Adding Content
 
 - Content files should be placed in the `/content/` directory using Markdown format
-- Images should be stored in `/static/images/` with appropriate subdirectories
+- CMS-managed images live in `/assets/images/` (posters, band, site, merch)
 - Use TOML format for page front matter (+++...+++)
 
 ## Deployment

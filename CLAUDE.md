@@ -11,15 +11,17 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 - The site uses the `hugo-split-theme` with custom modifications
 
 ## Site Structure
-- Content files are stored in `/content/` directory using Markdown format
-- Images are stored in `/static/images/` with subdirectories for headshots, posters, etc.
-- Configuration is maintained in `hugo.toml` using TOML syntax
-- The `CNAME` file in the root directory configures the custom domain for GitHub Pages
+- Content is edited by the band through Pages CMS (`.pages.yml`). See `docs/editing-the-site.md`.
+- Gigs: one front-matter-only file per show in `content/gigs/`; venues in `data/venues/*.yml`
+- Band, videos, merch, site settings (tagline, background, nav links): `data/*.yml`
+- CMS-managed images: `assets/images/{posters,band,site,merch}/`, referenced as `/images/...`
+- Templates: root `layouts/` and `assets/` override the vendored `themes/hugo-split-theme/` (never edit the theme)
+- Configuration is maintained in `hugo.toml`
 
 ## Commands
 - Build (local development): `hugo server`
 - Build (production): `hugo --minify`
-- Deploy: Automatic when pushed to main branch
+- Deploy: automatic on push to main, plus a nightly rebuild that moves past gigs to Past Shows
 
 ## Deployment
 - The site is automatically built and deployed to GitHub Pages when changes are pushed to the main branch
@@ -38,10 +40,8 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 - Markdown: Follow standard Markdown conventions with HTML when required
 
 ## Content Organization
-- Main sections: About, The Band, Live, Videos, Posters
-- Band member information: Maintained in `the-band.md` with tabular layout
-- Live performances: Listed in `live.md` with chronological order
-- Homepage: Main content in `_index.md`
+- Pages: Live (upcoming gigs), Past Shows, Posters, The Band, Videos, Merch, Contact, About
+- Upcoming vs. past is decided at build time by date (America/New_York) with a JS backstop
 
 ## Special Considerations
 - Maintain responsive design for optimal viewing on all devices
