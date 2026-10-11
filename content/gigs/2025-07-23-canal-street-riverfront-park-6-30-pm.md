@@ -1,8 +1,8 @@
 +++
 date = 2025-07-23
-start = ""
-venue = "unknown-venue"
+start = "6:30 pm"
+end = "8 pm"
+venue = "canal-street-riverfront-park"
 poster = "/images/posters/2025-07-23.jpg"
-notes = "Penacook Park"
 cancelled = false
 +++
