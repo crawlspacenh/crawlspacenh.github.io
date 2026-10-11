@@ -80,7 +80,7 @@ jobs:
     steps:
       - name: Deploy to GitHub Pages
         id: deployment
-        uses: actions/deploy-pages@v4
+        uses: actions/deploy-pages@v5
 
   # Tell the band when a build fails (the live site keeps the last good version).
   notify-failure:
