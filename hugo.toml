@@ -2,8 +2,11 @@ baseURL = 'https://crawlspacenh.com/'
 languageCode = 'en-us'
 title = 'Crawlspace'
 theme = "hugo-split-theme"
-# disableKinds = ["section", "taxonomy", "RSS", "sitemap"]
-# disableHugoGeneratorInject = true
+disableKinds = ["rss", "taxonomy", "term"]
+
+# Gigs are pages dated in the future; without this Hugo skips them.
+buildFuture = true
+timeZone = 'America/New_York'
 
 # Local preview mode
 relativeURLs = true
@@ -31,112 +34,19 @@ unsafe = true # Allows embedding HTML in Markdown
 
 [services]
 [services.googleAnalytics]
-# Enter your tracking code to enable Google Analytics
 ID = "G-42STEVR9W0"
 
+# Band-editable settings (tagline, background, links) live in data/site.yml.
 [params]
-
-# Metadata for search engines and social sharing
 author = "Crawlspace NH"
 description = "The best little jam band in New Hampshire"
-shareImage = "images/social.jpg"
 twitterHandle = "crawlspacenh"
-
-# Favicon
 favicon = "favicon.ico"
 
-# Section - Visual
 [params.visual]
-
-# Image
 [params.visual.image]
 enable = true
-file = "images/background.jpg"
 position = "center center"
-
-#   # Video
-#   [params.visual.video]
-#     enable = false
-#     mute = true
-#     file = "videos/background.mp4"
-#     # youtubeId = "dk9uNWPP7EA"
-
-# Links
-#
-# Links List #1
-[[params.links]]
-[params.links.list1]
-heading = "About"
-
-[[params.links.list1.link]]
-text = "The Band"
-url = "the-band.html"
-new_tab = false
-
-[[params.links.list1.link]]
-text = "Live"
-url = "live.html"
-new_tab = false
-
-[[params.links.list1.link]]
-text = "Videos"
-url = "videos.html"
-new_tab = false
-
-[[params.links.list1.link]]
-text = "Posters"
-url = "posters.html"
-new_tab = false
-
-[[params.links.list1.link]]
-text = "Merch"
-url = "merch.html"
-new_tab = false
-
-# Links List #2
-[[params.links]]
-[params.links.list2]
-heading = "Social"
-
-[[params.links.list2.link]]
-text = "Bookings"
-url = "contact.html"
-new_tab = false
-
-[[params.links.list2.link]]
-text = "Email"
-url = "mailto:fans@crawlspacenh.com"
-
-[[params.links.list2.link]]
-text = "Facebook"
-url = "https://www.facebook.com/p/Crawlspace-NH-100064934713606/"
-new_tab = true
-
-# [[params.links.list2.link]]
-# text = "Soundcloud"
-# url = "https://soundcloud.com/crawlspace-nh"
-# new_tab = true
-
-# [[params.links.list2.link]]
-#   text = "Instagram"
-#   url = "#"
-
-# Links List #3
-# [[params.links]]
-#   [params.links.list3]
-#     heading = "Network"
-#
-#     [[params.links.list3.link]]
-#       text = "Link One"
-#       url = "#"
-#
-#     [[params.links.list3.link]]
-#       text = "Link Two"
-#       url = "#"
-#
-#     [[params.links.list3.link]]
-#       text = "Link Three"
-#       url = "#"
 
 # The original template is released under the Creative Commons Attribution 3.0 License.
 # Please keep the original attribution link when using for your own project.
@@ -147,7 +57,7 @@ new_tab = true
 [[server.headers]]
 for = '/**'
 [server.headers.values]
-Content-Security-Policy = "default-src 'self'; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src 'self' https://fonts.gstatic.com; img-src 'self' https://dummyimage.com"
+Content-Security-Policy = "default-src 'self'; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src 'self' https://fonts.gstatic.com; img-src 'self' https://dummyimage.com; script-src 'self' 'unsafe-inline' https://www.googletagmanager.com; frame-src https://www.youtube.com https://www.youtube-nocookie.com; connect-src 'self' https://formspree.io https://*.google-analytics.com"
 Referrer-Policy = 'strict-origin-when-cross-origin'
 X-Content-Type-Options = 'nosniff'
 X-Frame-Options = 'DENY'

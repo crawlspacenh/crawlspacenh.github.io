@@ -1,0 +1,10 @@
+members:
+  - name: "Mike D'Amante"
+    instruments: ["Vocals", "Guitars", "Synths"]
+    photo: "/images/band/mike-001.jpg"
+  - name: "Andy Boeckeler"
+    instruments: ["Guitars"]
+    photo: "/images/band/andy-001.jpg"
+  - name: "Bobby Decorte"
+    instruments: ["Bass Guitars", "Vocals"]
+    photo: "/images/band/bobby-002.jpg"
