@@ -1,0 +1,21 @@
+{{ $g := .page }}
+{{ $v := .venue }}
+{{ $status := cond ($g.Params.cancelled | default false) "https://schema.org/EventCancelled" "https://schema.org/EventScheduled" }}
+{{ $address := dict
+  "@type" "PostalAddress"
+  "streetAddress" (string ($v.street | default ""))
+  "addressLocality" (string ($v.city | default ""))
+  "addressRegion" (string ($v.state | default ""))
+  "postalCode" (string ($v.zip | default ""))
+}}
+{{ $event := dict
+  "@context" "https://schema.org"
+  "@type" "MusicEvent"
+  "name" ($g.Params.title | default (printf "Crawlspace at %s" $v.name))
+  "startDate" ($g.Date.Format "2006-01-02")
+  "eventStatus" $status
+  "eventAttendanceMode" "https://schema.org/OfflineEventAttendanceMode"
+  "performer" (dict "@type" "MusicGroup" "name" "Crawlspace")
+  "location" (dict "@type" "Place" "name" $v.name "address" $address)
+}}
+<script type="application/ld+json">{{ $event | jsonify | safeJS }}</script>

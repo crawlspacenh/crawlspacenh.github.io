@@ -1,0 +1,14 @@
+{{ define "main" }}
+{{ partial "bio" . }}
+{{ with (partial "func/gigs.html" .).upcoming }}
+<div class="split-bio">
+  <section class="next-shows" data-gig-list data-limit="3">
+    <h2>Next shows</h2>
+    {{ range . }}{{ partial "gig.html" (dict "page" . "show_poster" false) }}{{ end }}
+    <p class="gig-more"><a href="/live.html">All upcoming shows &raquo;</a></p>
+  </section>
+</div>
+{{ partial "gig-backstop.html" . }}
+{{ end }}
+{{ partial "links" . }}
+{{ end }}

@@ -1,0 +1,21 @@
+{{ $g := .page }}
+{{ $v := partial "func/venue.html" $g }}
+{{ $date := $g.Date.Format "2006-01-02" }}
+{{ $cancelled := $g.Params.cancelled | default false }}
+<article class="gig{{ if $cancelled }} gig--cancelled{{ end }}" data-date="{{ $date }}">
+  <h3 class="gig-date">{{ $g.Date.Format "Monday, January 2, 2006" }}{{ if $cancelled }} <span class="gig-badge">Cancelled</span>{{ end }}</h3>
+  {{ with $g.Params.title }}<p class="gig-title">{{ . }}</p>{{ end }}
+  {{ with $g.Params.start }}<p class="gig-time">{{ . }}{{ with $g.Params.end }} – {{ . }}{{ end }} ET</p>{{ end }}
+  <p class="gig-venue">
+    {{ if $v.url }}<a href="{{ $v.url }}" target="_blank" rel="noopener">{{ $v.name }}</a>{{ else }}{{ $v.name }}{{ end }}
+    {{ with $v.street }}<br>{{ . }}{{ end }}
+    {{ with $v.city }}<br>{{ . }}{{ with $v.state }}, {{ . }}{{ end }}{{ with $v.zip }} {{ . }}{{ end }}{{ end }}
+    {{ with $v.map_url }} (<a href="{{ . }}" target="_blank" rel="noopener">map</a>){{ end }}
+  </p>
+  {{ with $g.Params.notes }}<p class="gig-notes">{{ . }}</p>{{ end }}
+  {{ if not $cancelled }}{{ with $g.Params.ticket_url }}<p class="gig-tickets"><a href="{{ . }}" target="_blank" rel="noopener">Tickets</a></p>{{ end }}{{ end }}
+  {{ if .show_poster }}{{ with $g.Params.poster }}
+    {{ partial "picture.html" (dict "src" . "alt" (printf "Poster for %s, %s" $v.name $date) "width" 300 "class" "gig-poster" "href" "original") }}
+  {{ end }}{{ end }}
+  {{ partial "gig-jsonld.html" (dict "page" $g "venue" $v) }}
+</article>

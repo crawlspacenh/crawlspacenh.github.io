@@ -1,0 +1,12 @@
+{{ define "main" }}
+{{ partial "bio" . }}
+{{ $gigs := (partial "func/gigs.html" .).upcoming }}
+<div class="split-bio">
+  <section class="gig-list" data-gig-list>
+    {{ range $gigs }}{{ partial "gig.html" (dict "page" . "show_poster" true) }}{{ end }}
+    <p class="gig-empty" data-gig-empty{{ if $gigs }} hidden{{ end }}>No shows booked right now. Check back soon, or see <a href="/past-shows.html">past shows</a>.</p>
+  </section>
+  <p class="gig-more"><a href="/past-shows.html">Past shows &raquo;</a></p>
+</div>
+{{ partial "gig-backstop.html" . }}
+{{ end }}
