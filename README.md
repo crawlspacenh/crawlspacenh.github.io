@@ -49,8 +49,9 @@ site generator.
 
 ### Theme Customization
 
-This site uses the `hugo-split-theme` with custom modifications. Theme files
-are located in the `/themes/hugo-split-theme/` directory.
+This site uses the `hugo-split-theme`, vendored in `/themes/hugo-split-theme/`.
+Don't edit the theme; customizations live in the root `layouts/` and `assets/`
+directories, which override the theme's files.
 
 ### Adding Content
 

@@ -1869,6 +1869,7 @@ Co-Authored-By: Claude <noreply@anthropic.com>"
 - [ ] **Step 4: Manual check (Ian, after merge)**
   - Actions → "Deploy Hugo site to Pages" lists the schedule trigger.
   - Push a commit that breaks a template: a "Site build failed" issue opens, mentioning `@feldspar88-web`. A second failure comments on the same issue. Revert the commit and close the issue.
+  - Confirm @feldspar88-web is Bobby's actual GitHub handle (it was taken from git author names).
 
 ---
 
@@ -2108,6 +2109,9 @@ Push the branch and open it at app.pagescms.org (select the branch). Check each 
   - [ ] Contact page save keeps `layout = "contact"` and `after_form`. If `hidden` isn't supported and `layout` gets dropped, enable `settings.content.merge: true` instead.
   - [ ] `required`, `default`, and `description` render. Remove any option that the config validator rejects.
   - [ ] Email-invite a test address as a collaborator, and confirm the invitee can edit and the commit carries their name.
+  - [ ] Edit and save the Contact page "Text below the form": it renders as headings/links (not literal "##"), proving the rich-text editor round-trips Markdown.
+  - [ ] Upload a PDF or SVG as a poster: the build stays green with a WARN and the file is skipped.
+  - [ ] Upload a portrait phone photo as a band photo: it renders upright.
 
 ---
 

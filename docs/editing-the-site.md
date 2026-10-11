@@ -22,7 +22,15 @@ Don't delete a venue that old gigs use; just leave it.
 
 ## Upload a poster
 In a gig, click **Poster** → upload the image straight from your phone. Big photos are fine.
+Photos must be JPG or PNG (PDFs and SVGs won't show up).
 It shows up on the gig and on the Posters page.
+
+## Remove a bad upload
+Pages CMS → **Media** → find the file → delete it, then save any change.
+
+## Edit the About or Contact page
+Open **About page** or **Contact page** in the sidebar, edit the text, and **Save**.
+The booking form itself can't be changed there.
 
 ## Edit the band, videos, merch, or site settings
 Use **Band**, **Videos**, **Merch**, or **Site settings**. Drag items to reorder them.
@@ -35,7 +43,8 @@ ask Bobby to revert it, or just fix it in Pages CMS and save again.
 ## The site didn't update
 1. Check GitHub for an open issue called **"Site build failed"**. It links to what went wrong.
 2. Usually the last save caused it. Fix or undo that change in Pages CMS. The next save
-   rebuilds the site. Close the issue once the site is updated.
+   rebuilds the site. Once the site is updated, the issue needs closing. Only Bobby (or
+   anyone with a GitHub login) can close it; everyone else should just tell Bobby.
 3. Nothing in Pages CMS for a couple of months? GitHub pauses the nightly rebuild in quiet
    repos. Go to **Actions** → **Deploy Hugo site to Pages** → **Enable workflow**, or just
    save any change.
