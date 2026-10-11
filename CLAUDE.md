@@ -7,7 +7,7 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 - It is hosted on GitHub Pages with a custom domain
 - The base domain for the site is: `crawlspacenh.com` (defined in the CNAME file)
 - The site contains content for Crawlspace, a jam band based in New Hampshire
-- The band consists of five members playing various instruments
+- The band's current lineup is in `data/band.yml` (editable in Pages CMS)
 - The site uses the `hugo-split-theme` with custom modifications
 
 ## Site Structure
@@ -36,7 +36,7 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 - Links: Use relative URLs when linking to internal content
 - Naming conventions: Use kebab-case for all file names
 - Images: Include alt text for all images and appropriate ARIA attributes for HTML
-- CSS: Custom styles should be included within content files when needed
+- CSS: Put custom styles in `assets/css/site.css` (theme colors/fonts live in `assets/scss/split.scss`); don't add inline `<style>` to content files
 - Markdown: Follow standard Markdown conventions with HTML when required
 
 ## Content Organization
