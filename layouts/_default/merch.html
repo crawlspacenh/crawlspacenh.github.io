@@ -1,0 +1,14 @@
+{{ define "main" }}
+{{ partial "bio" . }}
+<div class="split-bio">
+  <div class="merch-grid">
+    {{ range site.Data.merch.items }}
+    <div class="merch-card">
+      {{ partial "picture.html" (dict "src" .image "alt" .title "width" 240 "href" .url) }}
+      <div class="merch-title">{{ .title }}</div>
+      <a href="{{ .url }}" target="_blank" rel="noopener" class="merch-button">Buy Now</a>
+    </div>
+    {{ end }}
+  </div>
+</div>
+{{ end }}
