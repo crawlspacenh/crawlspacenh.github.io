@@ -5,7 +5,7 @@
 */}}
 {{ $slug := path.Base (.Params.venue | default "") | strings.TrimSuffix ".yml" | strings.TrimSuffix ".yaml" }}
 {{ $venue := false }}
-{{ with site.Data.venues }}{{ $venue = index . $slug }}{{ end }}
+{{ with hugo.Data.venues }}{{ $venue = index . $slug }}{{ end }}
 {{ if not $venue }}
   {{ warnf "Gig %q references missing venue %q" .File.Path $slug }}
   {{ $venue = dict "name" ($slug | default "Venue TBA") }}

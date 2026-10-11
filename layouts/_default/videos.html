@@ -3,7 +3,7 @@
 {{ $pc := site.Config.Privacy.YouTube }}
 {{ $host := cond $pc.PrivacyEnhanced "www.youtube-nocookie.com" "www.youtube.com" }}
 <div class="split-bio">
-  {{ range site.Data.videos.videos }}
+  {{ range hugo.Data.videos.videos }}
     {{ $u := urls.Parse .youtube_url }}
     {{ $q := $u.Query }}
     {{ $embed := "" }}

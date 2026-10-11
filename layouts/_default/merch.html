@@ -2,7 +2,7 @@
 {{ partial "bio" . }}
 <div class="split-bio">
   <div class="merch-grid">
-    {{ range site.Data.merch.items }}
+    {{ range hugo.Data.merch.items }}
     <div class="merch-card">
       {{ partial "picture.html" (dict "src" .image "alt" .title "width" 240 "href" .url) }}
       <div class="merch-title">{{ .title }}</div>
