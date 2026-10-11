@@ -7,6 +7,7 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 - It is hosted on GitHub Pages with a custom domain
 - The base domain for the site is: `crawlspacenh.com` (defined in the CNAME file)
 - The site contains content for Crawlspace, a jam band based in New Hampshire
+- Site content is managed through Pages CMS at https://app.pagescms.org/ (configured by `.pages.yml`), layered on top of the GitHub Pages site
 - The band's current lineup is in `data/band.yml` (editable in Pages CMS)
 - The site uses the `hugo-split-theme`, vendored in `themes/` and never edited; it is overridden from root `layouts/` and `assets/`
 
