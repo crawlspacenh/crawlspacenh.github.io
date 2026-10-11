@@ -3,7 +3,7 @@
   Accepts a bare slug or a path ("data/venues/x.yml"), since Pages CMS can store either.
   A missing venue must not fail the build: warn and return the slug as the name.
 */}}
-{{ $slug := path.BaseName (.Params.venue | default "") }}
+{{ $slug := path.Base (.Params.venue | default "") | strings.TrimSuffix ".yml" | strings.TrimSuffix ".yaml" }}
 {{ $venue := false }}
 {{ with site.Data.venues }}{{ $venue = index . $slug }}{{ end }}
 {{ if not $venue }}
