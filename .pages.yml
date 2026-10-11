@@ -5,6 +5,7 @@
 media:
   input: assets/images
   output: /images
+  extensions: [jpg, jpeg, png, webp, gif]
 
 settings:
   commit:

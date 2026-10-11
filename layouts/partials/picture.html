@@ -2,9 +2,18 @@
   Responsive WebP image from assets/.
   Input dict: src ("/images/posters/x.jpg"), alt, width (display px, default 400),
   class, href ("" = no link, "original" = link to full-size original, else a URL).
+  Only JPG/PNG/GIF/WebP are processed; anything else (PDF, SVG, ...) is skipped with a warning.
 */}}
 {{ $img := resources.Get (strings.TrimPrefix "/" (.src | default "")) }}
-{{ if $img }}
+{{ if not $img }}
+  {{ warnf "picture.html: image not found in assets: %q" .src }}
+{{ else if not (in (slice "jpeg" "png" "gif" "webp") $img.MediaType.SubType) }}
+  {{ warnf "picture.html: %q is not a JPG/PNG/GIF/WebP image; skipping" .src }}
+{{ else }}
+  {{ $orig := $img }}
+  {{ if ne $img.MediaType.SubType "gif" }}
+    {{ $img = $img.Filter images.AutoOrient }}
+  {{ end }}
   {{ $w := int (.width | default 400) }}
   {{ $w1 := cond (gt $img.Width $w) $w $img.Width }}
   {{ $one := $img.Resize (printf "%dx webp q80" $w1) }}
@@ -13,14 +22,13 @@
     {{ $two := $img.Resize (printf "%dx webp q80" (mul $w 2)) }}
     {{ $srcset = printf "%s, %s 2x" $srcset $two.RelPermalink }}
   {{ end }}
-  {{ $tag := printf `<img src="%s" srcset="%s" width="%d" height="%d" alt="%s" loading="lazy"%s>` $one.RelPermalink $srcset $one.Width $one.Height (.alt | default "" | htmlEscape) (cond (ne (.class | default "") "") (printf ` class="%s"` .class) "") }}
+  {{ $alt := .alt | default "" }}
+  {{ $class := .class | default "" }}
   {{ if eq .href "original" }}
-    <a href="{{ $img.RelPermalink }}" target="_blank" rel="noopener">{{ $tag | safeHTML }}</a>
+    <a href="{{ $orig.RelPermalink }}" target="_blank" rel="noopener"><img src="{{ $one.RelPermalink }}" srcset="{{ $srcset }}" width="{{ $one.Width }}" height="{{ $one.Height }}" alt="{{ $alt }}" loading="lazy"{{ with $class }} class="{{ . }}"{{ end }}></a>
   {{ else if .href }}
-    <a href="{{ .href }}" target="_blank" rel="noopener">{{ $tag | safeHTML }}</a>
+    <a href="{{ .href }}" target="_blank" rel="noopener"><img src="{{ $one.RelPermalink }}" srcset="{{ $srcset }}" width="{{ $one.Width }}" height="{{ $one.Height }}" alt="{{ $alt }}" loading="lazy"{{ with $class }} class="{{ . }}"{{ end }}></a>
   {{ else }}
-    {{ $tag | safeHTML }}
+    <img src="{{ $one.RelPermalink }}" srcset="{{ $srcset }}" width="{{ $one.Width }}" height="{{ $one.Height }}" alt="{{ $alt }}" loading="lazy"{{ with $class }} class="{{ . }}"{{ end }}>
   {{ end }}
-{{ else }}
-  {{ warnf "picture.html: image not found in assets: %q" .src }}
 {{ end }}

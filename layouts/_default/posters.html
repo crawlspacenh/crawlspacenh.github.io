@@ -11,6 +11,7 @@
 {{ end }}
 {{ $items := slice }}
 {{ range resources.Match "images/posters/*" }}
+  {{ if in (slice "jpeg" "png" "gif" "webp") .MediaType.SubType }}
   {{ $key := lower (strings.TrimPrefix "/" .Name) }}
   {{ $file := path.Base .Name }}
   {{ $gig := index $gigByPoster $key }}
@@ -21,6 +22,7 @@
   {{ else }}
     {{ $base := path.BaseName $file }}
     {{ $items = $items | append (dict "sort" $base "src" (printf "/%s" (strings.TrimPrefix "/" .Name)) "alt" (printf "Crawlspace poster, %s" $base) "caption" "") }}
+  {{ end }}
   {{ end }}
 {{ end }}
 <div class="split-bio">

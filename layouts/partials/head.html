@@ -15,9 +15,15 @@
 <meta property="og:url" content="{{ .Permalink }}" />
 {{ with site.Data.site.share_image }}
   {{ with resources.Get (strings.TrimPrefix "/" .) }}
-    {{ $share := .Fill "1200x630 jpg q80" }}
+    {{ if in (slice "jpeg" "png" "gif" "webp") .MediaType.SubType }}
+      {{ $src := . }}
+      {{ if ne .MediaType.SubType "gif" }}{{ $src = .Filter images.AutoOrient }}{{ end }}
+      {{ $share := $src.Fill "1200x630 jpg q80" }}
 <meta property="og:image" content="{{ $share.Permalink }}" />
 <meta name="twitter:card" content="summary_large_image" />
+    {{ else }}
+      {{ warnf "head.html: share image %q is not a JPG/PNG/GIF/WebP image; skipping" .Name }}
+    {{ end }}
   {{ end }}
 {{ end }}
 {{ with site.Params.twitterHandle }}<meta name="twitter:site" content="@{{ . }}" />{{ end }}
