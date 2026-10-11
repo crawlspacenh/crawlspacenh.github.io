@@ -106,7 +106,7 @@ jobs:
             "" \
             "What to do: see docs/editing-the-site.md, section \"The site didn't update\"." \
             "" \
-            "@feldspar88-web")
+            "@feldspar88-web @ianchesal")
           existing=$(gh issue list --state open --search 'in:title "Site build failed"' --json number --jq '.[0].number // empty')
           if [ -n "$existing" ]; then
             gh issue comment "$existing" --body "$body"
