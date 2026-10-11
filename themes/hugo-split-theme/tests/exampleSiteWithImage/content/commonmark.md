@@ -1,9 +1,5 @@
 +++
 title = "CommonMark"
-description = "CommonMark syntax examples and formatting reference"
-lastmod = 2025-10-19T14:35:00-04:00
-visual.image.enable = true
-draft = false
 +++
 
 *Italic*

@@ -1,0 +1,91 @@
+name: Test
+'on':
+  push:
+    branches:
+      - master
+  pull_request:
+jobs:
+  test:
+    name: Test
+    uses: escalate/github-actions-workflows/.github/workflows/test.yml@master
+
+  hugo:
+    name: Hugo
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v4
+
+      - name: Setup Hugo
+        uses: peaceiris/actions-hugo@v3
+        with:
+          extended: true
+
+      - name: Build Hugo example site with image
+        run: |
+          cd tests/exampleSiteWithImage/
+          hugo --environment=development --logLevel=info --baseURL= --themesDir=../../../
+
+      - name: Upload Hugo example site with image
+        uses: actions/upload-artifact@v4
+        with:
+          name: hugo-example-site-with-image
+          path: tests/exampleSiteWithImage/public
+
+      - name: Build Hugo example site with video
+        run: |
+          cd tests/exampleSiteWithVideo/
+          hugo --environment=development --logLevel=info --baseURL= --themesDir=../../../
+
+      - name: Upload Hugo example site with video
+        uses: actions/upload-artifact@v4
+        with:
+          name: hugo-example-site-with-video
+          path: tests/exampleSiteWithVideo/public
+
+  sitespeed:
+    name: Sitespeed.io
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v4
+
+      - name: Run sitespeed.io for example site with image in desktop mode
+        run: |
+          make sitespeed-io-example-site-with-image-desktop-mode
+
+      - name: Upload sitespeed.io result for example site with image in desktop mode
+        uses: actions/upload-artifact@v4
+        with:
+          name: sitespeed.io-example-site-with-image-desktop
+          path: tests/exampleSiteWithImage/sitespeed-result
+
+      - name: Run sitespeed.io for example site with image in mobile mode
+        run: |
+          make sitespeed-io-example-site-with-image-mobile-mode
+
+      - name: Upload sitespeed.io result for example site with image in mobile mode
+        uses: actions/upload-artifact@v4
+        with:
+          name: sitespeed.io-example-site-with-image-mobile
+          path: tests/exampleSiteWithImage/sitespeed-result
+
+      - name: Run sitespeed.io for example site with video in desktop mode
+        run: |
+          make sitespeed-io-example-site-with-video-desktop-mode
+
+      - name: Upload sitespeed.io result for example site with video in desktop mode
+        uses: actions/upload-artifact@v4
+        with:
+          name: sitespeed.io-example-site-with-video-desktop
+          path: tests/exampleSiteWithVideo/sitespeed-result
+
+      - name: Run sitespeed.io for example site with video in mobile mode
+        run: |
+          make sitespeed-io-example-site-with-video-mobile-mode
+
+      - name: Upload sitespeed.io result for example site with video in mobile mode
+        uses: actions/upload-artifact@v4
+        with:
+          name: sitespeed.io-example-site-with-video-mobile
+          path: tests/exampleSiteWithVideo/sitespeed-result

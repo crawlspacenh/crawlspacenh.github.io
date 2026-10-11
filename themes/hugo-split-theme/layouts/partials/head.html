@@ -1,0 +1,43 @@
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width,initial-scale=1" />
+
+<!-- SEO -->
+<title>{{ if .IsPage }}{{ .Title }} - {{ end }}{{ .Site.Title }}</title>
+{{ with .Site.Params.author }}<meta name="author" content="{{ . }}" />{{ end }}
+{{ with .Site.Params.description }}<meta name="description" content="{{ . }}" />{{ end }}
+<meta name="robots" content="index, follow" />
+<meta name="referrer" content="always" />
+
+<!-- Social & Open Graph -->
+<meta property="og:title" content="{{ if .IsPage }}{{ .Title }} - {{ end }}{{ .Site.Title }}" />
+{{ with .Site.Params.description }}<meta property="og:description" content="{{ . }}" />{{ end }}
+<meta property="og:url" content="{{ .Site.BaseURL }}" />
+{{ with .Site.Params.shareImage }}
+<meta property="og:image" content="{{ . | absURL }}" />
+<meta name="twitter:card" content="summary_large_image" />
+{{ end }}
+{{ with .Site.Params.twitterHandle }}<meta name="twitter:site" content="@{{ . }}" />{{ end }}
+
+<!-- Favicon -->
+{{ with .Site.Params.favicon }}<link rel="icon" href="{{ . | absURL }}" />{{ end }}
+
+<!-- Styles -->
+{{ if hugo.IsDevelopment }}
+  {{ $cssOpts := (dict "targetPath" "css/split.css" "enableSourceMap" true ) }}
+  {{ $styles := resources.Get "scss/split.scss" | resources.ExecuteAsTemplate "split.css" . | toCSS $cssOpts }}
+  <link rel="stylesheet" href="{{ $styles.RelPermalink }}" media="screen" />
+{{ else }}
+  {{ $cssOpts := (dict "targetPath" "css/split.css" ) }}
+  {{ $styles := resources.Get "scss/split.scss" | resources.ExecuteAsTemplate "split.css" . | toCSS $cssOpts | minify | fingerprint }}
+  <link rel="stylesheet" href="{{ $styles.RelPermalink }}" integrity="{{ $styles.Data.Integrity }}" crossorigin="anonymous" media="screen" />
+{{ end }}
+
+<!-- Custom Styles -->
+{{ if .Site.Params.custom.css.enable }}
+  <link rel="stylesheet" href="{{ "css/style.css" | absURL }}" type="text/css" media="screen" />
+{{ end }}
+
+<!-- Google Analytics -->
+{{ if and (.Site.Config.Services.GoogleAnalytics.ID) (not hugo.IsDevelopment) }}
+  {{ template "_internal/google_analytics.html" . }}
+{{ end }}

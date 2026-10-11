@@ -1,0 +1,21 @@
+# Docs: https://github.com/gohugoio/hugoThemesSiteBuilder?tab=readme-ov-file#theme-configuration
+
+name = "Split"
+license = "Creative Commons Attribution 3.0 Unported"
+licenselink = "//github.com/ianchesal/hugo-split-theme/blob/master/LICENSE.md"
+description = "Split is a centrally-divided layout for a professional online presence with a big image or video left with alongside content."
+homepage = "//github.com/ianchesal/hugo-split-theme"
+tags = ["minimal", "onepage", "one page", "responsive", "personal"]
+features = []
+min_version = "0.120"
+
+authors = [
+  {name = "Ian Chesal", homepage = "https://mostlywrong.net"},
+  {name = "Christian Mendoza", homepage = "https://iamchristian.me/ndoza"},
+  {name = "Felix Börner", homepage = "https://www.felix-boerner.de/"}
+]
+
+[original]
+  name = "One Page Love"
+  homepage = "//onepagelove.com/split"
+  repo = ""
