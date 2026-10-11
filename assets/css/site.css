@@ -42,7 +42,11 @@
 html:not(.js) .next-shows .gig:nth-of-type(n+4) { display: none; }
 
 /* Posters */
+/* The theme's content column shrinks to fit its content; small thumbnails
+   would collapse it to one poster wide. Ask for the column's full width. */
 .poster-grid {
+  width: 640px;
+  max-width: 100%;
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
   gap: 20px;
