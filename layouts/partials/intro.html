@@ -1,0 +1,8 @@
+<div class="split-intro">
+  {{ if .IsHome }}
+  <h1>{{ site.Title }}</h1>
+  {{ with site.Data.site.tagline }}<h2 class="tagline">{{ . }}</h2>{{ end }}
+  {{ else }}
+  <h1><a href="/" class="title">{{ site.Title }}</a> &raquo; {{ .Title }}</h1>
+  {{ end }}
+</div>

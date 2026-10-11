@@ -1,0 +1,26 @@
+{{/*
+  Responsive WebP image from assets/.
+  Input dict: src ("/images/posters/x.jpg"), alt, width (display px, default 400),
+  class, href ("" = no link, "original" = link to full-size original, else a URL).
+*/}}
+{{ $img := resources.Get (strings.TrimPrefix "/" (.src | default "")) }}
+{{ if $img }}
+  {{ $w := int (.width | default 400) }}
+  {{ $w1 := cond (gt $img.Width $w) $w $img.Width }}
+  {{ $one := $img.Resize (printf "%dx webp q80" $w1) }}
+  {{ $srcset := printf "%s 1x" $one.RelPermalink }}
+  {{ if gt $img.Width (mul $w 2) }}
+    {{ $two := $img.Resize (printf "%dx webp q80" (mul $w 2)) }}
+    {{ $srcset = printf "%s, %s 2x" $srcset $two.RelPermalink }}
+  {{ end }}
+  {{ $tag := printf `<img src="%s" srcset="%s" width="%d" height="%d" alt="%s" loading="lazy"%s>` $one.RelPermalink $srcset $one.Width $one.Height (.alt | default "" | htmlEscape) (cond (ne (.class | default "") "") (printf ` class="%s"` .class) "") }}
+  {{ if eq .href "original" }}
+    <a href="{{ $img.RelPermalink }}" target="_blank" rel="noopener">{{ $tag | safeHTML }}</a>
+  {{ else if .href }}
+    <a href="{{ .href }}" target="_blank" rel="noopener">{{ $tag | safeHTML }}</a>
+  {{ else }}
+    {{ $tag | safeHTML }}
+  {{ end }}
+{{ else }}
+  {{ warnf "picture.html: image not found in assets: %q" .src }}
+{{ end }}

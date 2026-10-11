@@ -1,0 +1,38 @@
+//-------------------------------------------------------------------------------
+// Variables
+//-------------------------------------------------------------------------------
+
+// Colors
+$color-background   : #061C30;
+$color-text         : #848d96;
+$color-link         : #848d96;
+$color-link-hover   : #CA486d;
+$color-maverick     : #47bec7;
+$color-tagline      : #CCCCCC;
+
+// Breakpoints
+$bp-smallish        : 1200px;
+$bp-tablet          : 800px;
+$bp-mobile          : 500px;
+
+// Image: background comes from data/site.yml (editable in Pages CMS).
+{{- $bg := "" -}}
+{{- with site.Data.site.background_image -}}
+  {{- with resources.Get (strings.TrimPrefix "/" .) -}}
+    {{- $bg = (.Resize "1920x webp q80").RelPermalink -}}
+  {{- end -}}
+{{- end }}
+$image-background   : {{ if and site.Params.visual.image.enable $bg }}url('{{ $bg }}'){{ else }}none{{ end }};
+$image-position     : {{ site.Params.visual.image.position | default "center center" }};
+
+// Animation
+$animation-name     : fadein;
+$animation-duration : 2s;
+
+//-------------------------------------------------------------------------------
+// Imports
+//-------------------------------------------------------------------------------
+
+@import "reset";
+@import "fonts";
+@import "content";
